@@ -1,0 +1,307 @@
+body {
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+    overflow-x: hidden;
+}
+
+/*---------------- Header ------------------*/
+
+header.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 5em;
+    background: transparent linear-gradient(93deg, #1673B0 0%, #74469C 53%, #BD3761 100%) 0% 0% no-repeat padding-box;
+    border-radius: 0 0 2.5em 0;
+    padding: 0 1.5em;
+    overflow: hidden;
+    z-index: 2;
+}
+
+header .menu-wrap {
+    cursor: pointer;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+header .menu-wrap img {
+    height: 1.25em;
+}
+
+header .logo-wrap {
+    display: flex;
+    align-items: center;
+    flex: 5;
+    cursor: pointer;
+}
+
+header .logo-wrap img {
+    height: 2em;
+}
+
+header .search-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 18;
+}
+
+header .search-wrap #searchbar {
+    width: 95%;
+    height: 45px;
+    border: 1px solid #0000000D;
+    border-radius: 8px;
+    box-shadow: 0px 5px 30px #00000066, inset 0 0 2px #000000aa;
+    padding-left: 3.5em;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    background: white url('/assets/icons/search-icon.svg') 1vw 50% no-repeat padding-box;
+    background-size: 25px 25px;
+    transition: box-shadow 0.2s linear;
+}
+
+header .search-wrap #searchbar::placeholder {
+    color: #707070;
+    opacity: 0.5;
+}
+
+header .search-wrap #searchbar:focus {
+    outline: none;
+    box-shadow: 0px 0px 10px 0px #888;
+}
+
+header .profile-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 5;
+}
+
+header .profile-wrap img:first-child {
+    height: 44px;
+}
+
+header .profile-wrap :not(img:first-child) {
+    height: 24px;
+    margin: 12px 12px;
+}
+
+header .profile-wrap #profile-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+/*----------------- Content --------------------*/
+
+.content {
+    margin-top: 100px;
+}
+
+.content section {
+    margin-left: 40px
+}
+
+.content section.welcome {
+    margin-left: 0;
+}
+
+.content .welcome .welcome-card {
+    display: flex;
+    flex: 3;
+    width: min-content;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.content .welcome .welcome-card .welcome-card-container {
+    width: 236px;
+}
+
+.content .welcome .welcome-card .welcome-card-text {}
+
+.content .welcome .welcome-card .welcome-card-text span {
+    color: #1D70AF;
+}
+
+.content .welcome .welcome-card .welcome-card-text span:first-child {
+    font-size: 2.75rem;
+    font-weight: 300;
+}
+
+.content .welcome .welcome-card .welcome-card-text span:last-child {
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 0 5px;
+}
+
+.content .welcome .welcome-card .welcome-card-buttons {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 5%;
+    max-width: 260px;
+}
+
+.content .welcome .welcome-card .welcome-card-buttons .button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    padding: 0;
+}
+
+.content .welcome .welcome-card .welcome-card-buttons .button>* {
+    display: block;
+}
+
+.content .welcome .welcome-card .welcome-card-buttons .button .button-icon {
+    height: 32.6px;
+    margin-bottom: 10px;
+    width: fit-content;
+}
+
+.content .welcome .welcome-card .welcome-card-buttons .button .button-icon:last-child {
+    height: 40px;
+}
+
+.content .welcome .welcome-card .welcome-card-buttons .button .button-text {
+    font-size: 16px;
+    line-height: 1;
+    width: min-content;
+}
+
+.content .welcome .offer-container {
+    flex: 12;
+    display: flex;
+    overflow: auto;
+    align-items: center;
+    padding: 0 0 1em .5em;
+}
+
+.content .welcome .offer-container::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.content .welcome .offer-container .offer {
+    margin: 2px 20px 2px 0;
+    width: fit-content;
+}
+
+.content .welcome .offer-container .offer img {
+    height: 200px;
+    width: 750px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0px 2px 5px 2px #ccc;
+}
+
+.content section .section-top {
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 20px 0;
+}
+
+.content section .section-top .section-title {
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-right: 10px;
+    color: #1D70AF;
+}
+
+.content section .section-top .section-link {
+    font-size: 0.8em;
+    text-decoration: none;
+    color: #888;
+    line-height: 1.9;
+}
+
+.content section .section-content {
+    display: flex;
+    overflow: auto;
+    overflow-y: hidden;
+    padding: 20px 15px;
+}
+
+.content section .section-content::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.content section .section-content .explore-card {
+    z-index: 1;
+    cursor: pointer;
+    margin-right: 20px;
+    position: relative;
+    border-radius: 8px;
+    height: fit-content;
+    box-shadow: 0px 0px 10px #ccc;
+    transition: 0.2s linear;
+}
+
+.content section .section-content .explore-card:hover {
+    transform: translateY(-12.4px);
+    box-shadow: -2px 5px 15px #888;
+}
+
+.content section .section-content .explore-card * {
+    transition: 0.2s linear;
+}
+.content section .section-content .explore-card>* {
+    height: 356px;
+    width: 224px;
+    /* transition: 0.2s linear; */
+    border-radius: 8px;
+}
+
+.content section .section-content .explore-card:hover>* {
+    height: 380.8px;
+    width: 306px;
+    /* transform: scale(1.1); */
+}
+
+.content section .section-content .explore-card>img {
+    object-fit: cover;
+}
+
+.content section .section-content .explore-card .card-content {
+    color: #fff;
+    position: absolute;
+    top: 0;
+    padding: 30px 34px;
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.content section .section-content .explore-card .card-content span {
+    /* transition: 0.2s linear; */
+    display: block;
+    font-size: 24.8px;
+    font-weight: 700;
+}
+
+.content section .section-content .explore-card .card-content img {
+    /* transition: 0.2s linear; */
+    height: 25.44px;
+}
+
+.content section .section-content .explore-card:hover .card-content span {
+    font-size: 32px;
+}
+
+.content section .section-content .explore-card:hover .card-content img {
+    height: 30px;
+}
