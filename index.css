@@ -126,8 +126,6 @@ header .profile-wrap #profile-icon {
     width: 236px;
 }
 
-.content .welcome .welcome-card .welcome-card-text {}
-
 .content .welcome .welcome-card .welcome-card-text span {
     color: #1D70AF;
 }
@@ -229,8 +227,8 @@ header .profile-wrap #profile-icon {
 
 .content section .section-content {
     display: flex;
-    overflow: auto;
-    overflow-y: hidden;
+    flex-wrap: nowrap;
+    overflow-x: auto;
     padding: 20px 15px 35px 15px;
 }
 
@@ -239,71 +237,70 @@ header .profile-wrap #profile-icon {
     height: 0;
 }
 
-.content section .section-content .card-1, .content section .section-content .card-2 {
-    z-index: 1;
-    /* cursor: pointer; */
+/*------------------------------- CARDS -------------------------------*/
+
+.content section .section-content .card {
+    /* z-index: 1; */
+    border: none;
+    flex: 0 0 auto;
     margin-right: 20px;
     position: relative;
     border-radius: 8px;
-    height: fit-content;
     box-shadow: 0px 0px 10px #ccc;
-    transition: 0.3s linear;
+    transition: 150ms linear;
+    text-align: end;
 }
 
-.content section .section-content .card-1:hover {
-    transform: translateY(-12.4px);
-    box-shadow: -2px 5px 15px #888;
-    margin-bottom: -24.8px;
+.content section .section-content .card .card-content {
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 100%;
+    width: 100%;
+}
+
+/*------------------------------- CARD 1 -------------------------------*/
+
+.content section .section-content .card-1 {
+    height: 356px;
+    width: 224px;
 }
 
 .content section .section-content .card-1 * {
-    transition: 0.3s linear;
-}
-
-.content section .section-content .card-1>* {
-    height: 356px;
-    width: 224px;
-    /* transition: 0.3s linear; */
+    transition: 150ms linear;
     border-radius: 8px;
 }
 
-.content section .section-content .card-1:hover>* {
-    height: 380.8px;
-    width: 306px;
-    /* transform: scale(1.1); */
-}
-
 .content section .section-content .card-1>img {
+    height: 100%;
+    width: 100%;
     object-fit: cover;
 }
 
-.content section .section-content .card-1 .card-content, .content section .section-content .card-2 .card-content {
-    color: #fff;
-    position: absolute;
-    top: 0;
-    text-align: end;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-}
-
 .content section .section-content .card-1 .card-content {
+    background-color: rgba(0, 0, 0, 0.14);
     padding: 30px 34px;
 }
 
-.content section .section-content .card-2 .card-content {
-    padding: 15px;
-}
-
 .content section .section-content .card-1 .card-content .card-heading {
-    display: block;
     font-size: 24.8px;
     font-weight: 700;
 }
 
 .content section .section-content .card-1 .card-content img {
     height: 25.44px;
+}
+
+.content section .section-content .card-1:hover {
+    height: 380.8px;
+    width: 306px;
+    transform: translateY(-12.4px);
+    box-shadow: -2px 5px 15px #888;
+    margin-bottom: -24.8px;
 }
 
 .content section .section-content .card-1:hover .card-content .card-heading {
@@ -314,20 +311,168 @@ header .profile-wrap #profile-icon {
     height: 30px;
 }
 
-.content section .section-content .card-2 * {
-    transition: 0.3s linear;
-}
+/*------------------------------- CARD 2 -------------------------------*/
 
 .content section .section-content .card-2>* {
-    height: 164px;
-    width: 164px;
+    height: 131px;
+    width: 131px;
     border-radius: 8px;
 }
 
 .content section .section-content .card-2 .card-content {
-    background-color:  rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 15px;
 }
+
 .content section .section-content .card-2 .card-content .card-heading {
+    font-family: 'Quicksand', sans-serif;
     font-size: 19.2px;
     font-weight: 600;
+    width: min-content;
+}
+
+/*------------------------------- CARD 3 -------------------------------*/
+
+.content section .section-content .card-3>* {
+    height: 354.4px;
+    width: 1110.4px;
+    border-radius: 8px;
+}
+
+.content section .section-content .card-3 .card-content {
+    background-color: rgba(0, 0, 0, 0.14);
+    padding: 45px;
+}
+
+.content section .section-content .card-3 .card-content .card-heading {
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.content section .section-content .card-3 .card-content .card-text {
+    font-size: 25px;
+}
+
+/*------------------------------- CARD 4 -------------------------------*/
+
+.content section .section-content .card-4 {
+    box-shadow: -2px 5px 15px #888;
+}
+
+.content section .section-content .card-4>* {
+    height: 182.8px;
+    width: 370.8px;
+    border-radius: 8px;
+}
+
+.content section .section-content .card-4 .card-content {
+    background-color: rgba(0, 0, 0, 0.14);
+    padding: 30px 35px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.content section .section-content .card-4 .card-content .card-heading {
+    font-size: 29px;
+    font-weight: 700;
+}
+
+.content section .section-content .card-4 .card-content .get-now {
+    display: flex;
+    align-items: center;
+}
+
+.content section .section-content .card-4 .card-content .get-now span {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.content section .section-content .card-4 .card-content .get-now img {
+    height: 21px;
+}
+
+/*------------------------------- CARD 5 -------------------------------*/
+
+.content section .section-content .card-5 {
+    box-shadow: -2px 5px 15px #888;
+}
+
+.content section .section-content .card-5>* {
+    height: 380px;
+    width: 236px;
+    border-radius: 8px;
+}
+
+.content section .section-content .card-5 .card-content {
+    background-color: rgba(0, 0, 0, 0.26);
+    padding: 30px 35px;
+}
+
+.content section .section-content .card-5 .card-content .price-wrap .price-off {
+    text-decoration: line-through;
+}
+
+.content section .section-content .card-5 .card-content .price-wrap .price {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.content section .section-content .card-5 .card-content .card-heading {
+    font-size: 29px;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.content section .section-content .card-5 .card-content .buy-now span {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.content section .section-content .card-5 .card-content .buy-now img {
+    height: 21px;
+}
+
+/*------------------------------- CARD 5 -------------------------------*/
+
+.content section .section-content .tiny-card {
+    align-items: center;
+    padding:10px 15px;
+    box-shadow: 0px 0px 15px #ccc;
+    width: 450px;
+    text-decoration: none;
+    color: #000;
+    border-radius:8px;
+}
+.content section .section-content .tiny-card img{
+    width: 110px;
+    height: 130px;
+    margin:0;
+    padding:0;
+    border-radius:5px;
+
+}
+
+/*------------------------------- Footer -------------------------------*/
+
+footer{
+    background-color: #BD3761;
+    color: #fff;
+    padding: 50px 0 10px 80px;
+}
+footer .row{
+    margin:0 0 20px 0;
+}
+footer .footer-heading{
+    font-weight: 500;
+    font-size: 18px;
+    margin: 20px 5px;
+}
+footer .link{
+    display: block;
+    color: #ddd;
+    text-decoration: none;
+    font-size: 12px;
+    padding-bottom:20px;
+    /* line-height: 3; */
 }
