@@ -62,7 +62,7 @@ header .search-wrap #searchbar {
     font-size: 16px;
     background: white url('/assets/icons/search-icon.svg') 1vw 50% no-repeat padding-box;
     background-size: 25px 25px;
-    transition: box-shadow 0.2s linear;
+    transition: box-shadow 0.3s linear;
 }
 
 header .search-wrap #searchbar::placeholder {
@@ -106,7 +106,8 @@ header .profile-wrap #profile-icon {
 }
 
 .content section {
-    margin-left: 40px
+    margin-left: 40px;
+    margin-bottom: 15px;
 }
 
 .content section.welcome {
@@ -230,7 +231,7 @@ header .profile-wrap #profile-icon {
     display: flex;
     overflow: auto;
     overflow-y: hidden;
-    padding: 20px 15px;
+    padding: 20px 15px 35px 15px;
 }
 
 .content section .section-content::-webkit-scrollbar {
@@ -238,47 +239,48 @@ header .profile-wrap #profile-icon {
     height: 0;
 }
 
-.content section .section-content .explore-card {
+.content section .section-content .card-1, .content section .section-content .card-2 {
     z-index: 1;
-    cursor: pointer;
+    /* cursor: pointer; */
     margin-right: 20px;
     position: relative;
     border-radius: 8px;
     height: fit-content;
     box-shadow: 0px 0px 10px #ccc;
-    transition: 0.2s linear;
+    transition: 0.3s linear;
 }
 
-.content section .section-content .explore-card:hover {
+.content section .section-content .card-1:hover {
     transform: translateY(-12.4px);
     box-shadow: -2px 5px 15px #888;
+    margin-bottom: -24.8px;
 }
 
-.content section .section-content .explore-card * {
-    transition: 0.2s linear;
+.content section .section-content .card-1 * {
+    transition: 0.3s linear;
 }
-.content section .section-content .explore-card>* {
+
+.content section .section-content .card-1>* {
     height: 356px;
     width: 224px;
-    /* transition: 0.2s linear; */
+    /* transition: 0.3s linear; */
     border-radius: 8px;
 }
 
-.content section .section-content .explore-card:hover>* {
+.content section .section-content .card-1:hover>* {
     height: 380.8px;
     width: 306px;
     /* transform: scale(1.1); */
 }
 
-.content section .section-content .explore-card>img {
+.content section .section-content .card-1>img {
     object-fit: cover;
 }
 
-.content section .section-content .explore-card .card-content {
+.content section .section-content .card-1 .card-content, .content section .section-content .card-2 .card-content {
     color: #fff;
     position: absolute;
     top: 0;
-    padding: 30px 34px;
     text-align: end;
     display: flex;
     flex-direction: column;
@@ -286,22 +288,46 @@ header .profile-wrap #profile-icon {
     align-items: flex-end;
 }
 
-.content section .section-content .explore-card .card-content span {
-    /* transition: 0.2s linear; */
+.content section .section-content .card-1 .card-content {
+    padding: 30px 34px;
+}
+
+.content section .section-content .card-2 .card-content {
+    padding: 15px;
+}
+
+.content section .section-content .card-1 .card-content .card-heading {
     display: block;
     font-size: 24.8px;
     font-weight: 700;
 }
 
-.content section .section-content .explore-card .card-content img {
-    /* transition: 0.2s linear; */
+.content section .section-content .card-1 .card-content img {
     height: 25.44px;
 }
 
-.content section .section-content .explore-card:hover .card-content span {
+.content section .section-content .card-1:hover .card-content .card-heading {
     font-size: 32px;
 }
 
-.content section .section-content .explore-card:hover .card-content img {
+.content section .section-content .card-1:hover .card-content img {
     height: 30px;
+}
+
+.content section .section-content .card-2 * {
+    transition: 0.3s linear;
+}
+
+.content section .section-content .card-2>* {
+    height: 164px;
+    width: 164px;
+    border-radius: 8px;
+}
+
+.content section .section-content .card-2 .card-content {
+    background-color:  rgba(0, 0, 0, 0.4);
+}
+.content section .section-content .card-2 .card-content .card-heading {
+    font-size: 19.2px;
+    font-weight: 600;
 }
