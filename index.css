@@ -6,7 +6,7 @@ body {
     overflow-x: hidden;
 }
 
-/*---------------- Header ------------------*/
+/*------------------------------- Header -------------------------------*/
 
 header.navbar {
     position: fixed;
@@ -28,7 +28,7 @@ header .menu-wrap {
     flex: 1;
     display: flex;
     align-items: center;
-    margin-right:5px;
+    margin-right: 5px;
 }
 
 header .menu-wrap img {
@@ -107,14 +107,13 @@ header .profile-wrap #profile-icon {
     }
 }
 
-/*----------------- Content --------------------*/
+/*------------------------------- Content -------------------------------*/
 
 .content {
     margin-top: 100px;
 }
 
 .content section {
-    padding-left: min(40px, 3vw);
     margin-bottom: 15px;
 }
 
@@ -234,6 +233,7 @@ header .profile-wrap #profile-icon {
     display: flex;
     align-items: flex-end;
     padding: 0 0 20px 0;
+    padding-left: min(60px, 4vw);
 }
 
 .content section .section-header .section-title {
@@ -254,6 +254,7 @@ header .profile-wrap #profile-icon {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
+    padding-left: min(60px, 4vw);
     scroll-snap-type: x proximity;
     scroll-snap-points-x: repeat(100%);
     scroll-snap-type: mandatory;
@@ -262,10 +263,12 @@ header .profile-wrap #profile-icon {
 
 .content section .section-body.specials {
     padding: 20px 15px 35px 15px;
+    padding-left: min(60px, 4vw);
 }
 
 .content section .section-body.shadowed {
     padding: 12px 0px 20px 16px;
+    padding-left: min(60px, 4vw);
 }
 
 .content section .section-body::-webkit-scrollbar {
@@ -545,7 +548,7 @@ header .profile-wrap #profile-icon {
 .content section .section-body .large-card {
     scroll-snap-align: center;
     flex: 0 0 auto;
-    width: min(1055px, 100%);
+    width: min(1055px, 95%);
     /* height: min(430px, 20%); */
     display: flex;
     background-color: #304147;
@@ -595,19 +598,23 @@ footer {
     background-color: #BD3761;
     color: #fff;
     /* padding: 50px 0 10px 80px; */
-    padding-top:min(50px, 15vw);
-    padding-right:0;
-    padding-bottom:min(10px, 5vw);
-    padding-left:min(80px, 5vw);
+    padding-top: min(50px, 15vw);
+    padding-right: 0;
+    padding-bottom: min(10px, 5vw);
+    padding-left: min(110px, 10vw);
 }
 
 footer .row {
     margin: 0 0 20px 0;
 }
 
+footer>div>div {
+    margin: 0 20px;
+}
+
 footer .footer-heading {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 20px;
     margin: 20px 5px;
 }
 
@@ -619,11 +626,17 @@ footer .footer-links .link {
     padding-bottom: 20px;
     /* line-height: 3; */
 }
+
 footer .footer-links .link-container {
     display: flex;
     align-items: center;
-    padding-bottom: 14px;
+    padding-bottom: 20px;
 }
+
 footer .footer-links .link-container .link {
-    padding:0 5px;
+    padding: 0 5px;
+}
+
+footer .footer-links .link-container img {
+    height: 14px;
 }
