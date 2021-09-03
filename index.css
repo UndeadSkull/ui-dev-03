@@ -3,7 +3,6 @@ body {
     font-family: 'Quicksand', sans-serif;
     margin: 0;
     padding: 0;
-    /* overflow: hidden; */
     overflow-x: hidden;
 }
 
@@ -17,7 +16,9 @@ header.navbar {
     height: 5em;
     background: transparent linear-gradient(93deg, #1673B0 0%, #74469C 53%, #BD3761 100%) 0% 0% no-repeat padding-box;
     border-radius: 0 0 2.5em 0;
-    padding: 0 1.5em;
+    padding: 0;
+    padding-left: min(1.5em, 2vw);
+    padding-right: min(1.5em, 2vw);
     overflow: hidden;
     z-index: 2;
 }
@@ -27,6 +28,7 @@ header .menu-wrap {
     flex: 1;
     display: flex;
     align-items: center;
+    margin-right:5px;
 }
 
 header .menu-wrap img {
@@ -57,7 +59,7 @@ header .search-wrap #searchbar {
     border: 1px solid #0000000D;
     border-radius: 8px;
     box-shadow: 0px 5px 30px #00000066, inset 0 0 2px #000000aa;
-    padding-left: 3.5em;
+    padding-left: min(3.5em, 8vw);
     font-family: 'Quicksand', sans-serif;
     font-size: 16px;
     background: white url('/assets/icons/search-icon.svg') 1vw 50% no-repeat padding-box;
@@ -99,6 +101,12 @@ header .profile-wrap #profile-icon {
     border: 1px solid white;
 }
 
+@media screen and (max-width:480px) {
+    header.navbar {
+        height: fit-content;
+    }
+}
+
 /*----------------- Content --------------------*/
 
 .content {
@@ -106,7 +114,7 @@ header .profile-wrap #profile-icon {
 }
 
 .content section {
-    margin-left: 40px;
+    padding-left: min(40px, 3vw);
     margin-bottom: 15px;
 }
 
@@ -185,6 +193,10 @@ header .profile-wrap #profile-icon {
     overflow: auto;
     align-items: center;
     padding: 0 0 1em .5em;
+    scroll-snap-type: x proximity;
+    scroll-snap-points-x: repeat(100%);
+    scroll-snap-type: mandatory;
+    scroll-snap-destination: 100% 0%;
 }
 
 .content .welcome .offer-container::-webkit-scrollbar {
@@ -194,52 +206,76 @@ header .profile-wrap #profile-icon {
 
 .content .welcome .offer-container .offer {
     margin: 2px 20px 2px 0;
-    width: fit-content;
+    /* width: fit-content; */
+    scroll-snap-align: center;
+    width: 750px;
 }
 
 .content .welcome .offer-container .offer img {
-    height: 200px;
-    width: 750px;
+    /* height: 200px; */
     object-fit: cover;
     border-radius: 15px;
     box-shadow: 0px 2px 5px 2px #ccc;
+    width: inherit;
 }
 
-.content section .section-top {
+@media screen and (max-width: 1000px) {
+    .content .welcome {
+        padding-left: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    .content .welcome .offer-container .offer {
+        width: min(750px, 85vw);
+    }
+}
+
+.content section .section-header {
     display: flex;
     align-items: flex-end;
     padding: 0 0 20px 0;
 }
 
-.content section .section-top .section-title {
+.content section .section-header .section-title {
     font-size: 1.2em;
     font-weight: 700;
     margin-right: 10px;
     color: #1D70AF;
 }
 
-.content section .section-top .section-link {
+.content section .section-header .section-link {
     font-size: 0.8em;
     text-decoration: none;
     color: #888;
     line-height: 1.9;
 }
 
-.content section .section-content {
+.content section .section-body {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
+    scroll-snap-type: x proximity;
+    scroll-snap-points-x: repeat(100%);
+    scroll-snap-type: mandatory;
+    scroll-snap-destination: 100% 0%;
+}
+
+.content section .section-body.specials {
     padding: 20px 15px 35px 15px;
 }
 
-.content section .section-content::-webkit-scrollbar {
+.content section .section-body.shadowed {
+    padding: 12px 0px 20px 16px;
+}
+
+.content section .section-body::-webkit-scrollbar {
     width: 0;
     height: 0;
 }
 
 /*------------------------------- CARDS -------------------------------*/
 
-.content section .section-content .card {
+.content section .section-body .card {
     /* z-index: 1; */
     border: none;
     flex: 0 0 auto;
@@ -249,9 +285,11 @@ header .profile-wrap #profile-icon {
     box-shadow: 0px 0px 10px #ccc;
     transition: 150ms linear;
     text-align: end;
+    max-width: 100%;
+    scroll-snap-align: center;
 }
 
-.content section .section-content .card .card-content {
+.content section .section-body .card .card-content {
     color: #fff;
     font-family: 'Raleway', sans-serif;
     position: absolute;
@@ -265,37 +303,37 @@ header .profile-wrap #profile-icon {
 
 /*------------------------------- CARD 1 -------------------------------*/
 
-.content section .section-content .card-1 {
+.content section .section-body .card-1 {
     height: 356px;
     width: 224px;
 }
 
-.content section .section-content .card-1 * {
+.content section .section-body .card-1 * {
     transition: 150ms linear;
     border-radius: 8px;
 }
 
-.content section .section-content .card-1>img {
+.content section .section-body .card-1>img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.content section .section-content .card-1 .card-content {
+.content section .section-body .card-1 .card-content {
     background-color: rgba(0, 0, 0, 0.14);
     padding: 30px 34px;
 }
 
-.content section .section-content .card-1 .card-content .card-heading {
+.content section .section-body .card-1 .card-content .card-heading {
     font-size: 24.8px;
     font-weight: 700;
 }
 
-.content section .section-content .card-1 .card-content img {
+.content section .section-body .card-1 .card-content img {
     height: 25.44px;
 }
 
-.content section .section-content .card-1:hover {
+.content section .section-body .card-1:hover {
     height: 380.8px;
     width: 306px;
     transform: translateY(-12.4px);
@@ -303,28 +341,28 @@ header .profile-wrap #profile-icon {
     margin-bottom: -24.8px;
 }
 
-.content section .section-content .card-1:hover .card-content .card-heading {
+.content section .section-body .card-1:hover .card-content .card-heading {
     font-size: 32px;
 }
 
-.content section .section-content .card-1:hover .card-content img {
+.content section .section-body .card-1:hover .card-content img {
     height: 30px;
 }
 
 /*------------------------------- CARD 2 -------------------------------*/
 
-.content section .section-content .card-2>* {
+.content section .section-body .card-2>* {
     height: 131px;
     width: 131px;
     border-radius: 8px;
 }
 
-.content section .section-content .card-2 .card-content {
+.content section .section-body .card-2 .card-content {
     background-color: rgba(0, 0, 0, 0.4);
     padding: 15px;
 }
 
-.content section .section-content .card-2 .card-content .card-heading {
+.content section .section-body .card-2 .card-content .card-heading {
     font-family: 'Quicksand', sans-serif;
     font-size: 19.2px;
     font-weight: 600;
@@ -333,146 +371,259 @@ header .profile-wrap #profile-icon {
 
 /*------------------------------- CARD 3 -------------------------------*/
 
-.content section .section-content .card-3>* {
-    height: 354.4px;
-    width: 1110.4px;
+.content section .section-body .card-3>* {
+    height: min(354.4px, 30vw);
+    width: min(1110.4px, 80vw);
     border-radius: 8px;
 }
 
-.content section .section-content .card-3 .card-content {
+.content section .section-body .card-3 .card-content {
     background-color: rgba(0, 0, 0, 0.14);
-    padding: 45px;
+    padding: min(45px, 3vw);
 }
 
-.content section .section-content .card-3 .card-content .card-heading {
-    font-size: 55px;
+.content section .section-body .card-3 .card-content .card-heading {
+    font-size: min(55px, 4vw);
     font-weight: 700;
     line-height: 1;
 }
 
-.content section .section-content .card-3 .card-content .card-text {
-    font-size: 25px;
+.content section .section-body .card-3 .card-content .card-text {
+    font-size: min(25px, 3vw);
 }
 
 /*------------------------------- CARD 4 -------------------------------*/
 
-.content section .section-content .card-4 {
-    box-shadow: -2px 5px 15px #888;
+.content section .section-body .card-4 {
+    box-shadow: -5px 10px 15px -5px #888;
 }
 
-.content section .section-content .card-4>* {
-    height: 182.8px;
-    width: 370.8px;
+.content section .section-body .card-4>* {
+    height: min(182.8px, 30vw);
+    width: min(370.8px, 70vw);
     border-radius: 8px;
 }
 
-.content section .section-content .card-4 .card-content {
+.content section .section-body .card-4 .card-content {
     background-color: rgba(0, 0, 0, 0.14);
-    padding: 30px 35px;
+    padding-top: min(30px, 2vw);
+    padding-left: min(35px, 2vw);
     align-items: flex-start;
     justify-content: flex-start;
 }
 
-.content section .section-content .card-4 .card-content .card-heading {
-    font-size: 29px;
+.content section .section-body .card-4 .card-content .card-heading {
+    font-size: min(29px, 5vw);
     font-weight: 700;
 }
 
-.content section .section-content .card-4 .card-content .get-now {
+.content section .section-body .card-4 .card-content .get-now {
     display: flex;
     align-items: center;
 }
 
-.content section .section-content .card-4 .card-content .get-now span {
-    font-size: 20px;
+.content section .section-body .card-4 .card-content .get-now span {
+    display: inline-block;
+    margin-right: 12px;
+    font-size: min(20px, 4vw);
     font-weight: 600;
 }
 
-.content section .section-content .card-4 .card-content .get-now img {
-    height: 21px;
+.content section .section-body .card-4 .card-content .get-now img {
+    height: min(21px, 4vw);
 }
 
 /*------------------------------- CARD 5 -------------------------------*/
 
-.content section .section-content .card-5 {
-    box-shadow: -2px 5px 15px #888;
+.content section .section-body .card-5 {
+    box-shadow: -5px 10px 15px -5px #888;
 }
 
-.content section .section-content .card-5>* {
+.content section .section-body .card-5>* {
     height: 380px;
     width: 236px;
     border-radius: 8px;
 }
 
-.content section .section-content .card-5 .card-content {
+.content section .section-body .card-5 .card-content {
     background-color: rgba(0, 0, 0, 0.26);
     padding: 30px 35px;
 }
 
-.content section .section-content .card-5 .card-content .price-wrap .price-off {
-    text-decoration: line-through;
-}
-
-.content section .section-content .card-5 .card-content .price-wrap .price {
-    font-size: 25px;
-    font-weight: 600;
-}
-
-.content section .section-content .card-5 .card-content .card-heading {
+.content section .section-body .card-5 .card-content .card-heading {
     font-size: 29px;
     font-weight: 700;
-    line-height: 1.1;
+    line-height: 1;
+    margin-bottom: 10px;
 }
 
-.content section .section-content .card-5 .card-content .buy-now span {
+.content section .section-body .card-5 .card-content .price-wrap {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.content section .section-body .card-5 .card-content .price-wrap .price-off {
+    text-decoration: line-through;
+    color: #ccc;
+}
+
+.content section .section-body .card-5 .card-content .price-wrap .price {
     font-size: 22px;
     font-weight: 600;
 }
 
-.content section .section-content .card-5 .card-content .buy-now img {
+.content section .section-body .card-5 .card-content .buy-now {
+    display: flex;
+    align-items: center;
+}
+
+.content section .section-body .card-5 .card-content .buy-now span {
+    display: inline-block;
+    margin-right: 12px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.content section .section-body .card-5 .card-content .buy-now img {
     height: 21px;
 }
 
-/*------------------------------- CARD 5 -------------------------------*/
+/*-------------------------- CARD 6 (tiny-card) --------------------------*/
 
-.content section .section-content .tiny-card {
+.content section .section-body .tiny-card {
+    scroll-snap-align: center;
+    flex: 0 0 auto;
+    position: relative;
     align-items: center;
-    padding:10px 15px;
-    box-shadow: 0px 0px 15px #ccc;
-    width: 450px;
+    padding: 16px 16px;
+    box-shadow: 0px 5px 15px #ddd;
+    width: min(490px, 95%);
     text-decoration: none;
     color: #000;
-    border-radius:8px;
+    border-radius: 8px;
+    margin-left: 0;
+    margin-right: 20px;
 }
-.content section .section-content .tiny-card img{
+
+.content section .section-body .tiny-card>img {
     width: 110px;
     height: 130px;
-    margin:0;
-    padding:0;
-    border-radius:5px;
+    margin: 0;
+    padding: 0;
+    border-radius: 5px;
+}
 
+.content section .section-body .tiny-card .card-content {
+    color: #444;
+    margin-left: 2%;
+}
+
+.content section .section-body .tiny-card .card-content p:first-child {
+    margin-bottom: 0;
+    line-height: 1;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.content section .section-body .tiny-card .card-content .price-wrap .price {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.content section .section-body .tiny-card .card-content .wishlist-add {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.content section .section-body .tiny-card .card-content .wishlist-add img {
+    height: 40px;
+}
+
+/*-------------------------- CARD 7 (large-card) --------------------------*/
+
+.content section .section-body .large-card {
+    scroll-snap-align: center;
+    flex: 0 0 auto;
+    width: min(1055px, 100%);
+    /* height: min(430px, 20%); */
+    display: flex;
+    background-color: #304147;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    margin-right: 20px;
+}
+
+.content section .section-body .large-card>img {
+    border-radius: 12px 0 0 12px;
+    width: min(780px, 70%);
+}
+
+.content section .section-body .large-card .card-content {
+    padding: min(30px, 4vw);
+    width: min(275px, 30%);
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.content section .section-body .large-card .card-content .card-heading {
+    font-size: min(30px, 4vw);
+    font-weight: 600;
+    line-height: 1;
+}
+
+.content section .section-body .large-card .card-content .card-text {
+    font-size: min(14px, 2vw);
+    line-height: 1.2;
+    margin: 10px 0 0 0;
+    margin-bottom: min(60px, 5vw);
+    color: #ccc;
+}
+
+.content section .section-body .large-card .card-content img {
+    height: 26px;
 }
 
 /*------------------------------- Footer -------------------------------*/
 
-footer{
+footer {
     background-color: #BD3761;
     color: #fff;
-    padding: 50px 0 10px 80px;
+    /* padding: 50px 0 10px 80px; */
+    padding-top:min(50px, 15vw);
+    padding-right:0;
+    padding-bottom:min(10px, 5vw);
+    padding-left:min(80px, 5vw);
 }
-footer .row{
-    margin:0 0 20px 0;
+
+footer .row {
+    margin: 0 0 20px 0;
 }
-footer .footer-heading{
+
+footer .footer-heading {
     font-weight: 500;
     font-size: 18px;
     margin: 20px 5px;
 }
-footer .link{
+
+footer .footer-links .link {
     display: block;
     color: #ddd;
     text-decoration: none;
     font-size: 12px;
-    padding-bottom:20px;
+    padding-bottom: 20px;
     /* line-height: 3; */
+}
+footer .footer-links .link-container {
+    display: flex;
+    align-items: center;
+    padding-bottom: 14px;
+}
+footer .footer-links .link-container .link {
+    padding:0 5px;
 }
