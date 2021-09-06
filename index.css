@@ -227,12 +227,12 @@ header .profile-wrap #profile-icon {
 
 .content .welcome .offer-container .slideRight {
     right: 0;
-    background: #ffffff99 url(/assets/icons/chevron-right-icon.svg) 50% 50% no-repeat border-box;
+    background: #ffffff99 url(assets/icons/chevron-right-icon.svg) 50% 50% no-repeat border-box;
     background-size: 20px;
 }
 
 .content .welcome .offer-container .slideLeft {
-    background: #ffffff99 url(/assets/icons/chevron-left-icon.svg) 50% 50% no-repeat border-box;
+    background: #ffffff99 url(assets/icons/chevron-left-icon.svg) 50% 50% no-repeat border-box;
     background-size: 20px;
     /* left:0; */
 }
@@ -333,12 +333,12 @@ header .profile-wrap #profile-icon {
 
 .content section .section-body .slideRight {
     right: 0;
-    background: #ffffff99 url(/assets/icons/chevron-right-icon.svg) 50% 50% no-repeat border-box;
+    background: #ffffff99 url(assets/icons/chevron-right-icon.svg) 50% 50% no-repeat border-box;
     background-size: 20px;
 }
 
 .content section .section-body .slideLeft {
-    background: #ffffff99 url(/assets/icons/chevron-left-icon.svg) 50% 50% no-repeat border-box;
+    background: #ffffff99 url(assets/icons/chevron-left-icon.svg) 50% 50% no-repeat border-box;
     background-size: 20px;
     /* left:0; */
 }
