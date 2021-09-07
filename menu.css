@@ -121,11 +121,33 @@ header .profile-wrap #profile-icon {
     background-color: #fff;
     padding: 100px 5px 25px 40px;
 }
-.menu a.link{
-    color:#000;
+
+.menu a.link {
+    color: #000;
     text-decoration: none;
     display: block;
     font-size: 21px;
     font-weight: 600;
     margin: 10px 0;
+}
+
+@media screen and (max-width:480px) {
+    header.navbar {
+        padding-top: 10px;
+        height: fit-content;
+        width: 100vw;
+    }
+    header .search-wrap {
+        justify-content: flex-end;
+        margin-right: 12px;
+    }
+    header .search-wrap #searchbar:not(#searchbar:focus) {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background-position-x: 50%;
+    }
+    header .search-wrap #searchbar::placeholder {
+        opacity: 0;
+    }
 }
