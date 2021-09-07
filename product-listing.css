@@ -113,7 +113,7 @@ header .profile-wrap #profile-icon {
 
 .listing-options {
     margin: 100px 20px 0 20px;
-    top:50px;
+    top: 50px;
     background-color: #fff;
     z-index: 1;
 }
@@ -187,8 +187,10 @@ header .profile-wrap #profile-icon {
     transition: transform 150ms;
 }
 
-.products .product-card:hover {
-    transform: scale(1.01);
+@media (hover: hover) and (pointer: fine) {
+    .products .product-card:hover {
+        transform: scale(1.01);
+    }
 }
 
 .products .product-card .product-image {
@@ -274,6 +276,7 @@ header .profile-wrap #profile-icon {
     .listing-options {
         margin: 120px 5px 5px 5px;
         overflow: hidden;
+        top: 75px;
     }
     .filter-box {
         flex-direction: column;
@@ -289,5 +292,9 @@ header .profile-wrap #profile-icon {
     }
     .filter-box .filter {
         margin-bottom: 10px;
+    }
+    .products .product-card {
+        transform: scale(1.2);
+        margin: 35px 0;
     }
 }
