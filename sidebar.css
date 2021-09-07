@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ccc;
+    position: relative;
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Quicksand', sans-serif;
+}
+
+.sidebar {
+    position: relative;
+    background-color: #fff;
+    /* height: 100vh; */
+    /* width: min(400px, 32vw); */
+    height: 100vh;
+    width: min(400px, 100%);
+    position: absolute;
+    right: 0;
+}
+
+.sidebar .sidebar-header {
+    height: 90px;
+    width: 100%;
+    background: transparent linear-gradient(90deg, #1673B0 0%, #74469C 51%, #BD3761 100%);
+    border-radius: 0 0 0 16px;
+    padding: 12px 30px;
+    box-shadow: 0px 2px 10px #0000002F;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.sidebar .sidebar-header .edit-wrap {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    z-index: 1;
+}
+
+.sidebar .sidebar-header .edit-wrap img {
+    height: 22px;
+}
+
+.sidebar .sidebar-header .edit-wrap span {
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    margin-left: 12px;
+}
+
+.sidebar .sidebar-body {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.sidebar .sidebar-body .user-image {
+    position: relative;
+    margin: 25px 0 0 20px;
+}
+
+.sidebar .sidebar-body .user-image .image {
+    margin-left: 15px;
+    width: 100px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0px 3px 10px #00000029;
+}
+
+.sidebar .sidebar-body .user-image .icon {
+    position: absolute;
+    left: 2%;
+    bottom: 2%;
+    height: 28px;
+    width: 30px;
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 50%;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.sidebar .sidebar-body {
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* position: relative; */
+}
+
+.sidebar .sidebar-body span {
+    display: block;
+    line-height: 1;
+}
+
+.sidebar .sidebar-body .user-basic {
+    /* margin: 10px 0; */
+    margin: 10px 0 15px 25px;
+}
+
+.sidebar .sidebar-body .user-name {
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+.sidebar .sidebar-body .user-type {
+    margin-bottom: 4px;
+    font-size: 18px;
+}
+
+.sidebar .sidebar-body .user-dob {
+    font-size: 14px;
+}
+
+.sidebar .sidebar-body .user-contact {
+    border-top: 1px solid #eeeeee99;
+    border-bottom: 1px solid #eeeeee99;
+    padding-left: 40px;
+}
+
+.sidebar .sidebar-body .user-contact span {
+    font-size: 21px;
+    letter-spacing: 1px;
+    display: block;
+    margin: 16px 0;
+}
+
+.sidebar .sidebar-body .sidebar-links {
+    padding-left: 40px;
+}
+
+.sidebar .sidebar-body .sidebar-links a.link {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    font-size: 21px;
+    font-weight: 600;
+    margin: 21px 0;
+}
+
+.sidebar .sidebar-body .sidebar-logout {
+    background-color: #fff;
+    padding: 30px 0;
+    border-top: 1px solid #eeeeee99;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar .sidebar-body .sidebar-logout .logout-btn {
+    color: #1672b0ee;
+    font-size: 20px;
+    font-weight: 600;
+    border: 2px solid #1672b0ee;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 12px 50px;
+}
