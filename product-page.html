@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/css/bootstrap.min.css"
+        integrity="sha512-F7WyTLiiiPqvu2pGumDR15med0MDkUIo5VTVyyfECR5DZmCnDhti9q5VID02ItWjq6fvDfMaBaDl2J3WdL1uxA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="product-page.css">
+    <title>Product Listing</title>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="menu-wrap">
+            <img src="assets/icons/header-menu.svg" alt="Menu icon">
+        </div>
+        <div class="logo-wrap">
+            <a href="/">
+                <img src="assets/logo/logo-2x.png" alt="Logo icon">
+            </a>
+        </div>
+        <div class="search-wrap">
+            <input type="text" name="searchbar" placeholder="Search for the materials" id="searchbar">
+        </div>
+        <div class="profile-wrap">
+            <img src="assets/icons/notification-icon.svg" alt="Notification icon">
+            <img src="assets/icons/wishlist-icon.svg" alt="Wishlist icon">
+            <img src="assets/icons/cart-icon.svg" alt="Cart icon">
+            <img src="assets/images/profile-image.jpg" alt="Profile icon" id="profile-icon">
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="breadcrumbs">
+            <img class="icon" src="assets/icons/breadcrumbs-icon.svg" alt="">
+            <a href="#" class="link">Categories</a>
+            <a href="#" class="link">Floor Tiles</a>
+            <a href="#" class="link">Living Room</a>
+        </div>
+
+        <div class="row item-details">
+            <div class="col-8">
+                <div class="item-left">
+                    <div class="image-wrap">
+                        <div class="image featured"><img src="assets/images/image-1.png" alt=""></div>
+                        <div class="image"><img src="assets/images/image-2.png" alt=""></div>
+                        <div class="image"><img src="assets/images/image-3.png" alt=""></div>
+                        <div class="image"><img src="assets/images/image-4.png" alt=""></div>
+                    </div>
+                    <hr>
+                    <div class="size-wrap">
+                        <div class="title">Available Sizes</div>
+                        <div class="d-flex">
+                            <a href="#" class="size">160 x 80</a>
+                            <a href="#" class="size active">120 x 60</a>
+                            <a href="#" class="size">80 x 80</a>
+                            <a href="#" class="size">80 x 80</a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="styles-wrap">
+                        <div class="title">Available Styles</div>
+                        <div class="d-flex">
+                            <div class="style">
+                                <div class="style-title">BATHROOM</div>
+                                <div class="style-body d-flex align-items-end">
+                                    <img src="assets/images/style.png" alt="">
+                                    <div class="style-select">
+                                        <select>
+                                            <option value="0">Qty</option>
+                                        </select>
+                                    </div>
+                                    <div class="value">
+                                        <div class="value-title">Quantity</div>
+                                        <div class="value-body input-group">
+                                            <input class="btn" type="button" value="-">
+                                            <input type="text" name="value" id="" placeholder="99">
+                                            <input class="btn" type="button" value="+">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="style">
+                                <div class="style-title">FLOOR</div>
+                                <div class="style-body d-flex align-items-end">
+                                    <img src="assets/images/style.png" alt="">
+                                    <div class="style-select">
+                                        <select>
+                                            <option value="0">Area</option>
+                                        </select>
+                                    </div>
+                                    <div class="value">
+                                        <div class="value-title">Area (Sq.Ft.)</div>
+                                        <div class="value-body input-group">
+                                            <input class="btn" type="button" value="-">
+                                            <input type="text" name="value" id="" placeholder="99">
+                                            <input class="btn" type="button" value="+">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="style">
+                                <div class="style-title">WALL</div>
+                                <div class="style-body d-flex align-items-end">
+                                    <img src="assets/images/style.png" alt="">
+                                    <div class="style-select">
+                                        <select>
+                                            <option value="0">Qty</option>
+                                        </select>
+                                    </div>
+                                    <div class="value">
+                                        <div class="value-title">Quantity</div>
+                                        <div class="value-body input-group">
+                                            <input class="btn" type="button" value="-">
+                                            <input type="text" name="value" id="" placeholder="99">
+                                            <input class="btn" type="button" value="+">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="details-wrap">
+                        <div class="title">Details</div>
+                        <div class="detail-table row">
+                            <div class="col">
+                                <div class="detail d-flex my-3">
+                                    <div class="key">Unit Price</div>
+                                    <div class="value">Per Box</div>
+                                </div>
+                                <div class="detail d-flex my-3">
+                                    <div class="key">Package Contains</div>
+                                    <div class="value">9 Pieces</div>
+                                </div>
+                                <div class="detail d-flex my-3">
+                                    <div class="key">Size</div>
+                                    <div class="value">120 x 60 cm</div>
+                                </div>
+                                <div class="detail d-flex my-3">
+                                    <div class="key">Thickness</div>
+                                    <div class="value">5.5mm</div>
+                                </div>
+                                <div class="detail d-flex my-3">
+                                    <div class="key">Material</div>
+                                    <div class="value">Ceramic</div>
+                                </div>
+                                <div class="detail d-flex my-3">
+                                    <div class="key">Type</div>
+                                    <div class="value">Ceramic</div>
+                                </div>
+                                <div class="detail d-flex my-3">
+                                    <div class="key">Pattern</div>
+                                    <div class="value">Digital Print</div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="detail d-flex my-3">
+                                    <div class="key">Finish</div>
+                                    <div class="value">Rustic</div>
+                                </div>
+                                <div class="detail d-flex my-3">
+                                    <div class="key">Feature</div>
+                                    <div class="value">Stain Free</div>
+                                </div>
+                                <div class="detail d-flex my-3">
+                                    <div class="key">Cover Area</div>
+                                    <div class="value">8.71 Sq. Ft.</div>
+                                </div>
+                                <div class="detail d-flex my-3">
+                                    <div class="key">Rate Per Sqft</div>
+                                    <div class="value">229.62</div>
+                                </div>
+                                <div class="detail d-flex my-3">
+                                    <div class="key">Ideal For</div>
+                                    <div class="value">Floor</div>
+                                </div>
+                                <div class="detail d-flex my-3">
+                                    <div class="key">Tags</div>
+                                    <div class="value">Wall Tiles, Tiles</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="item-right sticky-top">
+                    <div class="product-name">Mällsten</div>
+                    <div class="product-cat">Floor Decking, Outdoor</div>
+                    <hr>
+                    <div class="price-wrap d-flex">
+                        <div class="price">
+                            <div>Rs. 1,450</div>
+                            <div>Per 9/pack</div>
+                        </div>
+                        <div class="price-old">Rs. 1600</div>
+                        <div class="percentage-off">28% OFF</div>
+                    </div>
+                    <div class="stock">IN STOCK</div>
+                    <hr>
+                    <div class="buttons-wrap">
+                        <a href="#">
+                            <!--set class active to activate it-->
+                            <img class="wishlist active" src="assets/icons/wishlist-white.svg" alt="">
+                        </a>
+                        <!---->
+                        <a href="#" class="add-to-basket">Add to Basket</a>
+                        <div class="rating-wrap">
+                            <div class="rating">
+                                <div class="value">4.1</div>
+                                <div class="stars">
+                                    <img src="/assets/icons/star-1.svg" alt="">
+                                    <img src="/assets/icons/star-1.svg" alt="">
+                                    <img src="/assets/icons/star-1.svg" alt="">
+                                    <img src="/assets/icons/star-1.svg" alt="">
+                                    <img src="/assets/icons/star-0.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="count">209 Ratings</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row related-products">
+
+        </div>
+    </div>
+</body>
+
+</html>
