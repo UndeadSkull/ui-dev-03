@@ -160,10 +160,15 @@ header .profile-wrap #profile-icon {
     position: relative;
     width: 190px;
     height: 265px;
-    object-fit: cover;
     overflow: hidden;
     margin: 5px;
     border-radius: 6px;
+}
+
+.item-details .image-wrap .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .item-details .image-wrap .image.featured {
@@ -188,7 +193,12 @@ header .profile-wrap #profile-icon {
     font-size: 22px;
     font-weight: 700;
     color: #777;
-    margin: 20px 0
+    margin: 20px 0;
+}
+
+.item-details .size-wrap .overflow-auto::-webkit-scrollbar {
+    height: 0;
+    width: 0;
 }
 
 .item-details .size-wrap .size {
@@ -275,6 +285,10 @@ header .profile-wrap #profile-icon {
     width: 75px;
     text-align: center;
     padding: inherit 0;
+}
+
+.item-details .details-wrap .title {
+    color: #000;
 }
 
 .item-details .details-wrap .detail-table .detail .key {
@@ -467,11 +481,16 @@ header .profile-wrap #profile-icon {
 }
 
 .products {
-    padding: 0;
+    padding: 10px 0;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    /* flex-shrink: 0; */
+    /* flex-wrap: wrap; */
+    /* justify-content: space-evenly; */
+    flex-shrink: 0;
+}
+
+.products::-webkit-scrollbar {
+    height: 0;
+    width: 0;
 }
 
 .products .product-card {
@@ -482,6 +501,7 @@ header .profile-wrap #profile-icon {
     border: none;
     border-radius: 10px;
     margin: 6px;
+    flex-shrink: 0;
     transition: transform 150ms;
 }
 
@@ -594,10 +614,26 @@ header .profile-wrap #profile-icon {
         padding: 0;
         margin: 10px 0 0 0;
     }
+    .item-details .image-wrap .image {
+        height: 120px;
+    }
+    .item-details .styles-wrap .style .style-body select {
+        padding: 12px 0 !important;
+    }
+    .item-details .styles-wrap .style .style-body img {
+        width: 90px;
+        height: 80px;
+    }
+    .item-details .item-right {
+        margin-bottom: 10px;
+    }
     .item-details .item-right .image-wrap {
         flex-shrink: 0;
     }
     .item-details .item-right .buttons-wrap .add-to-basket {
         padding: 12px;
+    }
+    .related-products {
+        margin: 30px 0;
     }
 }
