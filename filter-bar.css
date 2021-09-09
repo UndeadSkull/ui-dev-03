@@ -110,7 +110,7 @@ header .profile-wrap #profile-icon {
     border: 1px solid white;
 }
 
-/*------------------------------- Sidebar -------------------------------*/
+/*------------------------------- Filter-bar -------------------------------*/
 
 .filter-bar {
     background-color: #fff;
@@ -129,10 +129,6 @@ header .profile-wrap #profile-icon {
 .filter-bar .filter-wrap .filter {
     border: none;
 }
-
-/* .filter-bar .filter-wrap .filter .filter-title {
-    border: none;
-} */
 
 .filter-bar .filter-wrap .filter .filter-title .accordion-button {
     font-size: 20px;
