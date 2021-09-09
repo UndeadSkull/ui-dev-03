@@ -400,6 +400,10 @@ header .profile-wrap #profile-icon {
     /* column-gap: 13.5px; */
 }
 
+.item-details .item-right .buttons-wrap>* {
+    margin: 0 5px;
+}
+
 .item-details .item-right .buttons-wrap .wishlist {
     border-radius: 8px;
     padding: 15px 22px;
@@ -610,12 +614,16 @@ header .profile-wrap #profile-icon {
     .content {
         margin: 120px 0 0 0;
     }
+    .content .breadcrumbs{
+        margin-left: 4px;
+    }
     .item-details {
         padding: 0;
         margin: 10px 0 0 0;
     }
     .item-details .image-wrap .image {
-        height: 120px;
+        height: 140px;
+        margin:2px;
     }
     .item-details .styles-wrap .style .style-body select {
         padding: 12px 0 !important;
@@ -629,6 +637,9 @@ header .profile-wrap #profile-icon {
     }
     .item-details .item-right .image-wrap {
         flex-shrink: 0;
+    }
+    .item-details .item-right .buttons-wrap>* {
+        margin:0 2px;
     }
     .item-details .item-right .buttons-wrap .add-to-basket {
         padding: 12px;
