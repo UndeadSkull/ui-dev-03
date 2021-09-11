@@ -122,7 +122,6 @@ header .profile-wrap #profile-icon {
 
 .breadcrumbs {
     display: flex;
-    /* justify-content: center; */
     align-items: flex-end;
 }
 
@@ -137,16 +136,23 @@ header .profile-wrap #profile-icon {
     text-decoration: none;
     color: #1673b052;
     line-height: 1;
-    /* opacity: 0.3; */
 }
 
 .breadcrumbs .link.active {
     color: #1673b0;
 }
 
-.my-basket {
-    /* justify-content: center; */
+.my-basket-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
+
+.my-basket {
+    align-self: flex-end;
+    max-width: 578px;
+}
+
 .my-basket .category {
     margin-bottom: 20px;
 }
@@ -171,9 +177,7 @@ header .profile-wrap #profile-icon {
     box-shadow: 0px 4px 13px #00000033;
     border-radius: 8px;
     width: 275px;
-    /* position: relative; */
     margin: 4px;
-    /* justify-content: space-between; */
 }
 
 .my-basket .category .cart-items-wrap .cart-item .item-image {
@@ -191,7 +195,6 @@ header .profile-wrap #profile-icon {
     padding: 2px 0 2px 7px;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
 }
 
 .my-basket .category .cart-items-wrap .cart-item .item-body .item-name {
@@ -224,6 +227,8 @@ header .profile-wrap #profile-icon {
     display: flex;
     align-items: center;
     column-gap: 10px;
+    justify-content: flex-end;
+    margin-right: 15px;
 }
 
 .order-page .share-wrap .share-text div:first-child {
@@ -260,7 +265,7 @@ header .profile-wrap #profile-icon {
 .order-page .order-details-wrap {
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-end;
 }
 
@@ -274,7 +279,7 @@ header .profile-wrap #profile-icon {
 
 .order-page .order-details {
     margin: 50px 0;
-    width: min(100%,500px);
+    width: min(100%, 360px);
 }
 
 .order-page .order-details .row {
@@ -345,6 +350,18 @@ header .profile-wrap #profile-icon {
     height: 40px;
 }
 
+@media screen and (max-width:1000px) {
+    .my-basket {
+        align-self: center;
+    }
+    .order-page .share-wrap {
+        justify-content: center;
+    }
+    .order-page .order-details-wrap {
+        justify-content: center;
+    }
+}
+
 @media screen and (max-width:480px) {
     header.navbar {
         padding-top: 10px;
@@ -363,5 +380,9 @@ header .profile-wrap #profile-icon {
     }
     header .search-wrap #searchbar::placeholder {
         opacity: 0;
+    }
+    
+    .my-basket {
+        max-width: 280px;
     }
 }
