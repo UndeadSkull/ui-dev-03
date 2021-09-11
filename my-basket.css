@@ -381,8 +381,16 @@ header .profile-wrap #profile-icon {
     header .search-wrap #searchbar::placeholder {
         opacity: 0;
     }
-    
+    .order-page {
+        margin-top: 120px;
+    }
     .my-basket {
         max-width: 280px;
+    }
+    .order-page .share-wrap {
+        flex-direction: column;
+        align-items: flex-start;
+        margin:20px 10px 0 10px;
+        row-gap: 10px;
     }
 }
