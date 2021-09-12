@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/css/bootstrap.min.css"
+        integrity="sha512-F7WyTLiiiPqvu2pGumDR15med0MDkUIo5VTVyyfECR5DZmCnDhti9q5VID02ItWjq6fvDfMaBaDl2J3WdL1uxA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="delivery-self.css">
+    <title>Delivery</title>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="menu-wrap">
+            <img src="assets/icons/header-menu.svg" alt="Menu icon">
+        </div>
+        <div class="logo-wrap">
+            <a href="/">
+                <img src="assets/logo/logo-2x.png" alt="Logo icon">
+            </a>
+        </div>
+        <div class="search-wrap">
+            <input type="text" name="searchbar" placeholder="Search for the materials" id="searchbar">
+        </div>
+        <div class="profile-wrap">
+            <img src="assets/icons/notification-icon.svg" alt="Notification icon">
+            <img src="assets/icons/wishlist-icon.svg" alt="Wishlist icon">
+            <img src="assets/icons/cart-icon.svg" alt="Cart icon">
+            <img src="assets/images/profile-image.jpg" alt="Profile icon" id="profile-icon">
+        </div>
+    </header>
+    <div class="order-page">
+        <div class="breadcrumbs">
+            <img class="icon" src="assets/icons/breadcrumbs-icon.svg" alt="">
+            <a href="#" class="link">My Basket</a>
+            <a href="#" class="link active">Delivery Details</a>
+            <a href="#" class="link">Payment Details</a>
+        </div>
+        <hr>
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-7 delivery-details-wrap">
+                <div class="delivery-details">
+                    <div class="delivery-option">
+                        <label class="option-wrap">Self Pick Up
+                            <input type="radio" name="delivery" checked="checked">
+                            <div class="custom-radio"></div>
+                        </label>
+                        <label class="option-wrap">Need Delivery
+                            <input type="radio" name="delivery">
+                            <div class="custom-radio"></div>
+                        </label>
+                    </div>
+                    <hr>
+                </div>
+                <div class="share-wrap">
+                    <div class="share-text">
+                        <div>Want to share this Quote?</div>
+                        <div>Share it with your friends and family</div>
+                    </div>
+                    <div class="share-btn btn">
+                        <div class="text">SHARE</div>
+                        <img src="assets/icons/share-icon.svg" alt="" class="img">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-5 order-details-wrap">
+                <div class="order-details">
+                    <div class="row detail">
+                        <div class="col">Order List</div>
+                        <div class="col">#26</div>
+                    </div>
+                    <div class="row detail">
+                        <div class="col">Total Amount</div>
+                        <div class="col info">46000</div>
+                    </div>
+                    <div class="row grand-total">
+                        GRAND TOTAL <span>INR 46,000.00</span>
+                    </div>
+                    <div class="row">
+                        <div class="btn">Check Out <img src="assets/icons/arrow-right.svg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+</body>
+
+</html>
