@@ -116,11 +116,11 @@ header .profile-wrap #profile-icon {
     display: flex;
     position: relative;
     width: min(700px, 92%);
+    min-height: 100vh;
 }
 
 .menu-left, .menu-right {
     width: min(350px, 100%);
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -196,7 +196,7 @@ header .profile-wrap #profile-icon {
     z-index: 0;
 }
 
-.menu .menu-right .menu-links .sublink-wrap a.sublink:hover {
+.menu .menu-right .menu-links .sublink-wrap a.sublink.active {
     color: #1773B0;
 }
 
