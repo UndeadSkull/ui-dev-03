@@ -598,9 +598,13 @@ header .profile-wrap #profile-icon {
     }
     .order-page .order-details-wrap {
         justify-content: center;
+        align-items: center;
     }
     .order-page .share-wrap {
         justify-content: center;
+    }
+    .order-page .order-details-wrap .deliver-to-wrap{
+        margin-top: 30px;
     }
 }
 
