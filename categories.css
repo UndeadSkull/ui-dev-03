@@ -112,26 +112,29 @@ header .profile-wrap #profile-icon {
 /*------------------------------- Sidebar -------------------------------*/
 
 .categories-wrap {
-    padding-top: 100px;
+    padding-top: calc(80px + 2.5vw);
 }
 
 .categories-top {
     display: flex;
-    justify-content: center;
     column-gap: 15px;
-    /* position: relative; */
+    overflow-x: auto;
+    /* margin: 0 39px; */
+    padding: 0 2.5vw 15px;
 }
+
+.categories-top::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
 .categories-top .card {
     overflow: hidden;
     border: none;
-    /* flex: 0 0 auto; */
-    /* margin-right: 20px; */
-    /* position: relative; */
     border-radius: 8px;
     box-shadow: 0px 0px 10px #ccc;
-    /* transition: 250ms ease-in-out; */
     text-align: end;
-    /* max-width: 100%; */
+    min-width: fit-content;
 }
 
 .categories-top .card .card-content {
@@ -139,16 +142,14 @@ header .profile-wrap #profile-icon {
     font-family: 'Raleway', sans-serif;
     position: absolute;
     display: flex;
-    /* flex-direction: column; */
     align-items: flex-end;
     justify-content: flex-end;
-    /* height: 100%; */
-    /* width: 100%; */
 }
 
 .categories-top .cat-card>* {
     height: 182px;
     width: 132px;
+    object-fit: cover;
 }
 
 .categories-top .cat-card .card-content {
@@ -181,5 +182,8 @@ header .profile-wrap #profile-icon {
     }
     header .search-wrap #searchbar::placeholder {
         opacity: 0;
+    }
+    .categories-top {
+        padding: 20px 2px;
     }
 }
