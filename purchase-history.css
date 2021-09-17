@@ -119,8 +119,6 @@ header .profile-wrap #profile-icon {
 .purchase-history .left {
     margin: 100px 5px 0 20px;
     overflow-x: auto;
-    /* top: 50px;
-    z-index: 1; */
 }
 
 .breadcrumbs {
@@ -218,22 +216,22 @@ header .profile-wrap #profile-icon {
     align-self: flex-start;
 }
 
-.purchase-cards-wrap .purchase-card .btn-status.processing, .purchase-cards-wrap .purchase-card .btn-status.dl-pending {
+.btn-status.processing, .btn-status.dl-pending {
     background-color: #0A73B033;
     border-color: #0A73B0;
 }
 
-.purchase-cards-wrap .purchase-card .btn-status.completed, .purchase-cards-wrap .purchase-card .btn-status.draft {
+.btn-status.completed, .btn-status.draft {
     background-color: #82828233;
     border-color: #828282;
 }
 
-.purchase-cards-wrap .purchase-card .btn-status.approved {
+.btn-status.approved {
     background-color: #74469C33;
     border-color: #74469C;
 }
 
-.purchase-cards-wrap .purchase-card .btn-status.ap-pending {
+.btn-status.ap-pending {
     background-color: #B4396933;
     border-color: #BD3761;
 }
@@ -360,11 +358,8 @@ header .profile-wrap #profile-icon {
 }
 
 .invoice-wrap .body .invoice-row .share-btn {
-    /* display: flex; */
-    /* align-items: center; */
     padding: 0 30px;
     border: 2px solid #1673B0;
-    /* border-radius: 8px; */
     column-gap: 9px;
 }
 
@@ -372,12 +367,10 @@ header .profile-wrap #profile-icon {
     color: #1673B0;
     font-size: 17px;
     font-weight: 700;
-    /* margin: 0 10px; */
 }
 
-.invoice-wrap .body .invoice-row .share-btn .img {
+.invoice-wrap .body .invoice-row .share-btn img {
     height: 20px;
-    /* margin: 5px 10px; */
 }
 
 @media screen and (max-width:1000px) {
