@@ -143,7 +143,6 @@ header .profile-wrap #profile-icon {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* flex-shrink: 0; */
 }
 
 .products .product-card {
