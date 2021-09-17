@@ -165,16 +165,16 @@ header .profile-wrap #profile-icon {
 
 .products .product-card.stock-out::before {
     content: 'Out of Stock';
-    font-size: 9;
+    font-size: 14px;
     font-weight: 600;
     color: #BD3761;
     position: absolute;
     background-color: #fff;
     z-index: 1;
-    padding: 3px 8px;
+    padding: 4px 9px;
     top: 15px;
     left: 15px;
-    border-radius: 8px;
+    border-radius: 5px;
 }
 
 .products .product-card.stock-out::after {
