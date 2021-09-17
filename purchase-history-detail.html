@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/css/bootstrap.min.css"
+        integrity="sha512-F7WyTLiiiPqvu2pGumDR15med0MDkUIo5VTVyyfECR5DZmCnDhti9q5VID02ItWjq6fvDfMaBaDl2J3WdL1uxA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="purchase-history-detail.css">
+    <title>Purchase History</title>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="menu-wrap">
+            <img src="assets/icons/header-menu.svg" alt="Menu icon">
+        </div>
+        <div class="logo-wrap">
+            <a href="/">
+                <img src="assets/logo/logo-2x.png" alt="Logo icon">
+            </a>
+        </div>
+        <div class="search-wrap">
+            <input type="text" name="searchbar" placeholder="Search for the materials" id="searchbar">
+        </div>
+        <div class="profile-wrap">
+            <img src="assets/icons/notification-icon.svg" alt="Notification icon">
+            <img src="assets/icons/wishlist-icon.svg" alt="Wishlist icon">
+            <img src="assets/icons/cart-icon.svg" alt="Cart icon">
+            <img src="assets/images/profile-image.jpg" alt="Profile icon" id="profile-icon">
+        </div>
+    </header>
+
+    <div class="purchase-history">
+        <div class="left">
+            <div class="breadcrumbs">
+                <img class="icon" src="assets/icons/breadcrumbs-icon.svg" alt="">
+                <a href="#" class="link active">Purchase History</a>
+            </div>
+            <div class="filter-box d-flex">
+                <a href="#" class="filter active">ALL</a>
+                <a href="#" class="filter">IN PROCESS</a>
+                <a href="#" class="filter">PENDING</a>
+                <a href="#" class="filter">COMPLETED</a>
+                <a href="#" class="filter">DRAFT</a>
+            </div>
+            <div class="purchase-cards-wrap">
+                <div class="card purchase-card">
+                    <div>
+                        <div class="card-row">
+                            <div class="name">Joseph C A</div>
+                            <div class="amount">$45,87,654.56</div>
+                        </div>
+                        <div class="card-row">
+                            <div class="invoice">INVOICE 0005687</div>
+                            <div class="date">16.12.2020</div>
+                        </div>
+                    </div>
+                    <div class="categories">Furniture | Flooring | Kitchen | Wall Tiles</div>
+                    <div class="card-row">
+                        <div>
+                            <div class="btn btn-status processing">ORDER PROCESSING</div>
+                        </div>
+                        <a href="#invoice" class="btn-go"><img src="assets/icons/right-arrow-red.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="card purchase-card">
+                    <div>
+                        <div class="card-row">
+                            <div class="name">William David</div>
+                            <div class="amount">$45,87,654.56</div>
+                        </div>
+                        <div class="card-row">
+                            <div class="invoice">INVOICE 0005687</div>
+                            <div class="date">16.12.2020</div>
+                        </div>
+                    </div>
+                    <div class="categories">Furniture | Flooring | Kitchen | Wall Tiles</div>
+                    <div class="card-row">
+                        <div>
+                            <div class="btn btn-status completed">COMPLETED</div>
+                        </div>
+                        <a href="#invoice" class="btn-go"><img src="assets/icons/right-arrow-red.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="card purchase-card">
+                    <div>
+                        <div class="card-row">
+                            <div class="name">Mark Anthony</div>
+                            <div class="amount">$45,87,654.56</div>
+                        </div>
+                        <div class="card-row">
+                            <div class="invoice">INVOICE 0005687</div>
+                            <div class="date">16.12.2020</div>
+                        </div>
+                    </div>
+                    <div class="categories">Furniture | Flooring | Kitchen | Wall Tiles</div>
+                    <div class="card-row">
+                        <div>
+                            <div class="btn btn-status approved">APPROVED</div>
+                            <div class="btn btn-status dl-pending">Delivery Pending</div>
+                        </div>
+                        <a href="#invoice" class="btn-go"><img src="assets/icons/right-arrow-red.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="card purchase-card">
+                    <div>
+                        <div class="card-row">
+                            <div class="name">Jason Jacob</div>
+                            <div class="amount">$45,87,654.56</div>
+                        </div>
+                        <div class="card-row">
+                            <div class="invoice">INVOICE 0005687</div>
+                            <div class="date">16.12.2020</div>
+                        </div>
+                    </div>
+                    <div class="categories">Furniture | Flooring | Kitchen | Wall Tiles</div>
+                    <div class="card-row">
+                        <div>
+                            <div class="btn btn-status draft">DRAFT</div>
+                        </div>
+                        <a href="#invoice" class="btn-go"><img src="assets/icons/right-arrow-red.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="card purchase-card">
+                    <div>
+                        <div class="card-row">
+                            <div class="name">Charles Mathew</div>
+                            <div class="amount">$45,87,654.56</div>
+                        </div>
+                        <div class="card-row">
+                            <div class="invoice">INVOICE 0005687</div>
+                            <div class="date">16.12.2020</div>
+                        </div>
+                    </div>
+                    <div class="categories">Furniture | Flooring | Kitchen | Wall Tiles</div>
+                    <div class="card-row">
+                        <div>
+                            <div class="btn btn-status ap-pending">PENDING FOR APPROVAL</div>
+                        </div>
+                        <a href="#invoice" class="btn-go"><img src="assets/icons/right-arrow-red.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="invoice-detail-wrap" id="invoice">
+                <div class="heading">
+                    <img src="/assets/icons/left-arrow-blue.svg" alt="">
+                    <div class="title">STATUS</div>
+                </div>
+                <div class="body">
+                    <div class="mb-4">
+                        <div class="name">Christopher Smith</div>
+                        <div class="invoice">INVOICE 0005687</div>
+                        <div class="date">15 August 2020 | Monday</div>
+                        <div class="categories">Furniture | Flooring | Kitchen | Wall Tiles</div>
+                        <div class="status-wrap">
+                            <div class="btn btn-status approved">APPROVED</div>
+                            <div class="btn btn-status dl-pending">DELIVERY IN PROGRESS</div>
+                        </div>
+
+                    </div>
+                    <hr>
+                    <div class="tables-wrap">
+                        <table class="table table-borderless">
+                            <h5>FURNITURE</h5>
+                            <thead>
+                                <tr>
+                                    <th scope="col">PRODUCT</th>
+                                    <th scope="col">UNIT</th>
+                                    <th scope="col">PRICE</th>
+                                    <th scope="col">AMOUNT</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row">PRODUCT 1</th>
+                                    <td>02</td>
+                                    <td>999.99</td>
+                                    <td>999.99</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">PRODUCT 2</th>
+                                    <td>01</td>
+                                    <td>999.99</td>
+                                    <td>999.99</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">PRODUCT 3</th>
+                                    <td>02</td>
+                                    <td>999.99</td>
+                                    <td>999.99</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">PRODUCT 4</th>
+                                    <td>03</td>
+                                    <td>999.99</td>
+                                    <td>999.99</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="table table-borderless">
+                            <h5>TILES</h5>
+                            <thead>
+                                <tr>
+                                    <th scope="col">PRODUCT</th>
+                                    <th scope="col">UNIT</th>
+                                    <th scope="col">PRICE</th>
+                                    <th scope="col">AMOUNT</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row">PRODUCT 1</th>
+                                    <td>02</td>
+                                    <td>999.99</td>
+                                    <td>999.99</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">PRODUCT 2</th>
+                                    <td>01</td>
+                                    <td>999.99</td>
+                                    <td>999.99</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">PRODUCT 3</th>
+                                    <td>02</td>
+                                    <td>999.99</td>
+                                    <td>999.99</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">PRODUCT 4</th>
+                                    <td>03</td>
+                                    <td>999.99</td>
+                                    <td>999.99</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <hr>
+                    <div class="invoice-row btn-wrap">
+                        <div class="btn share-btn">
+                            <div class="text">SHARE</div>
+                            <img src="assets/icons/share-icon.svg" alt="">
+                        </div>
+                        <div class="btn edit-btn">
+                            <span>EDIT ORDER</span>
+                            <img src="assets/icons/edit-icon.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
