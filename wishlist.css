@@ -276,8 +276,6 @@ header .profile-wrap #profile-icon {
     }
     .wishlist-wrap {
         margin: 120px 5px 5px 5px;
-        overflow: hidden;
-        top: 75px;
     }
     .products .product-card {
         transform: scale(1.2);
