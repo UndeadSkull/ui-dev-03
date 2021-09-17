@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/css/bootstrap.min.css"
+        integrity="sha512-F7WyTLiiiPqvu2pGumDR15med0MDkUIo5VTVyyfECR5DZmCnDhti9q5VID02ItWjq6fvDfMaBaDl2J3WdL1uxA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="wishlist.css">
+    <title>Wishlist</title>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="menu-wrap">
+            <img src="assets/icons/header-menu.svg" alt="Menu icon">
+        </div>
+        <div class="logo-wrap">
+            <a href="/">
+                <img src="assets/logo/logo-2x.png" alt="Logo icon">
+            </a>
+        </div>
+        <div class="search-wrap">
+            <input type="text" name="searchbar" placeholder="Search for the materials" id="searchbar">
+        </div>
+        <div class="profile-wrap">
+            <img src="assets/icons/notification-icon.svg" alt="Notification icon">
+            <img src="assets/icons/wishlist-icon.svg" alt="Wishlist icon">
+            <img src="assets/icons/cart-icon.svg" alt="Cart icon">
+            <img src="assets/images/profile-image.jpg" alt="Profile icon" id="profile-icon">
+        </div>
+    </header>
+
+    <div class="wishlist-wrap">
+        <div class="breadcrumbs">
+            <img class="icon" src="assets/icons/breadcrumbs-icon.svg" alt="">
+            <a href="#" class="link">Wishlist</a>
+            <span class="count">12 items</span>
+        </div>
+        <div class="products">
+            <div class="card product-card"><!--add class "stock-out" for Out of stock badge-->
+                <div class="product-image">
+                    <img src="assets/images/product.png" alt="">
+                    <!-- Wishlist icon - add class="active" to the svg element to change it to red-->
+                    <a href="#">
+                        <svg class="active" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34.253 30.185">
+                            <g transform="translate(0.875 0.875)">
+                                <path class="a"
+                                    d="M18.645,967.382a8.543,8.543,0,0,0-6.109,2.578,8.866,8.866,0,0,0,0,12.384L25.39,995.452a1.22,1.22,0,0,0,1.74,0Q33.564,988.9,40,982.357a8.862,8.862,0,0,0,0-12.384,8.566,8.566,0,0,0-12.231,0l-1.5,1.524-1.511-1.537A8.543,8.543,0,0,0,18.645,967.382Z"
+                                    transform="translate(-10.015 -967.382)" />
+                            </g>
+                        </svg>
+                    </a>
+                    <!---->
+                    <div class="product-colors">
+                        <div class="color" style="background-color:#585800"></div>
+                        <div class="color" style="background-color:#9C9990"></div>
+                        <div class="color" style="background-color:#004855"></div>
+                    </div>
+                </div>
+                <div class="product-details">
+                    <a href="#" class="product-name">Runnen</a>
+                    <div class="product-price">
+                        <div class="offer">
+                            <div class="old-price">Rs. 1852.00</div>
+                            <div class="off-percentage">20% Off</div>
+                        </div>
+                        <div class="price">Rs. 1,450/9 pack</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card product-card stock-out">
+                <div class="product-image">
+                    <img src="assets/images/product.png" alt="">
+                    <!-- Wishlist icon -->
+                    <a href="#">
+                        <svg class="active" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34.253 30.185">
+                            <g transform="translate(0.875 0.875)">
+                                <path class="a"
+                                    d="M18.645,967.382a8.543,8.543,0,0,0-6.109,2.578,8.866,8.866,0,0,0,0,12.384L25.39,995.452a1.22,1.22,0,0,0,1.74,0Q33.564,988.9,40,982.357a8.862,8.862,0,0,0,0-12.384,8.566,8.566,0,0,0-12.231,0l-1.5,1.524-1.511-1.537A8.543,8.543,0,0,0,18.645,967.382Z"
+                                    transform="translate(-10.015 -967.382)" />
+                            </g>
+                        </svg>
+                    </a>
+                    <!---->
+                    <div class="product-colors">
+                        <div class="color" style="background-color:#585800"></div>
+                        <div class="color" style="background-color:#9C9990"></div>
+                        <div class="color" style="background-color:#004855"></div>
+                    </div>
+                </div>
+                <div class="product-details">
+                    <a href="#" class="product-name">Runnen</a>
+                    <div class="product-price">
+                        <div class="offer">
+                            <div class="old-price">Rs. 1852.00</div>
+                            <div class="off-percentage">20% Off</div>
+                        </div>
+                        <div class="price">Rs. 1,450/9 pack</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card product-card">
+                <div class="product-image">
+                    <img src="assets/images/product.png" alt="">
+                    <!-- Wishlist icon -->
+                    <a href="#">
+                        <svg class="active" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34.253 30.185">
+                            <g transform="translate(0.875 0.875)">
+                                <path class="a"
+                                    d="M18.645,967.382a8.543,8.543,0,0,0-6.109,2.578,8.866,8.866,0,0,0,0,12.384L25.39,995.452a1.22,1.22,0,0,0,1.74,0Q33.564,988.9,40,982.357a8.862,8.862,0,0,0,0-12.384,8.566,8.566,0,0,0-12.231,0l-1.5,1.524-1.511-1.537A8.543,8.543,0,0,0,18.645,967.382Z"
+                                    transform="translate(-10.015 -967.382)" />
+                            </g>
+                        </svg>
+                    </a>
+                    <!---->
+                    <div class="product-colors">
+                        <div class="color" style="background-color:#585800"></div>
+                        <div class="color" style="background-color:#9C9990"></div>
+                        <div class="color" style="background-color:#004855"></div>
+                    </div>
+                </div>
+                <div class="product-details">
+                    <a href="#" class="product-name">Runnen</a>
+                    <div class="product-price">
+                        <div class="offer">
+                            <div class="old-price">Rs. 1852.00</div>
+                            <div class="off-percentage">20% Off</div>
+                        </div>
+                        <div class="price">Rs. 1,450/9 pack</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card product-card">
+                <div class="product-image">
+                    <img src="assets/images/product.png" alt="">
+                    <!-- Wishlist icon -->
+                    <a href="#">
+                        <svg class="active" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34.253 30.185">
+                            <g transform="translate(0.875 0.875)">
+                                <path class="a"
+                                    d="M18.645,967.382a8.543,8.543,0,0,0-6.109,2.578,8.866,8.866,0,0,0,0,12.384L25.39,995.452a1.22,1.22,0,0,0,1.74,0Q33.564,988.9,40,982.357a8.862,8.862,0,0,0,0-12.384,8.566,8.566,0,0,0-12.231,0l-1.5,1.524-1.511-1.537A8.543,8.543,0,0,0,18.645,967.382Z"
+                                    transform="translate(-10.015 -967.382)" />
+                            </g>
+                        </svg>
+                    </a>
+                    <!---->
+                    <div class="product-colors">
+                        <div class="color" style="background-color:#585800"></div>
+                        <div class="color" style="background-color:#9C9990"></div>
+                        <div class="color" style="background-color:#004855"></div>
+                    </div>
+                </div>
+                <div class="product-details">
+                    <a href="#" class="product-name">Runnen</a>
+                    <div class="product-price">
+                        <div class="offer">
+                            <div class="old-price">Rs. 1852.00</div>
+                            <div class="off-percentage">20% Off</div>
+                        </div>
+                        <div class="price">Rs. 1,450/9 pack</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card product-card">
+                <div class="product-image">
+                    <img src="assets/images/product.png" alt="">
+                    <!-- Wishlist icon -->
+                    <a href="#">
+                        <svg class="active" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34.253 30.185">
+                            <g transform="translate(0.875 0.875)">
+                                <path class="a"
+                                    d="M18.645,967.382a8.543,8.543,0,0,0-6.109,2.578,8.866,8.866,0,0,0,0,12.384L25.39,995.452a1.22,1.22,0,0,0,1.74,0Q33.564,988.9,40,982.357a8.862,8.862,0,0,0,0-12.384,8.566,8.566,0,0,0-12.231,0l-1.5,1.524-1.511-1.537A8.543,8.543,0,0,0,18.645,967.382Z"
+                                    transform="translate(-10.015 -967.382)" />
+                            </g>
+                        </svg>
+                    </a>
+                    <!---->
+                    <div class="product-colors">
+                        <div class="color" style="background-color:#585800"></div>
+                        <div class="color" style="background-color:#9C9990"></div>
+                        <div class="color" style="background-color:#004855"></div>
+                    </div>
+                </div>
+                <div class="product-details">
+                    <a href="#" class="product-name">Runnen</a>
+                    <div class="product-price">
+                        <div class="offer">
+                            <div class="old-price">Rs. 1852.00</div>
+                            <div class="off-percentage">20% Off</div>
+                        </div>
+                        <div class="price">Rs. 1,450/9 pack</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card product-card">
+                <div class="product-image">
+                    <img src="assets/images/product.png" alt="">
+                    <!-- Wishlist icon -->
+                    <a href="#">
+                        <svg class="active" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34.253 30.185">
+                            <g transform="translate(0.875 0.875)">
+                                <path class="a"
+                                    d="M18.645,967.382a8.543,8.543,0,0,0-6.109,2.578,8.866,8.866,0,0,0,0,12.384L25.39,995.452a1.22,1.22,0,0,0,1.74,0Q33.564,988.9,40,982.357a8.862,8.862,0,0,0,0-12.384,8.566,8.566,0,0,0-12.231,0l-1.5,1.524-1.511-1.537A8.543,8.543,0,0,0,18.645,967.382Z"
+                                    transform="translate(-10.015 -967.382)" />
+                            </g>
+                        </svg>
+                    </a>
+                    <!---->
+                    <div class="product-colors">
+                        <div class="color" style="background-color:#585800"></div>
+                        <div class="color" style="background-color:#9C9990"></div>
+                        <div class="color" style="background-color:#004855"></div>
+                    </div>
+                </div>
+                <div class="product-details">
+                    <a href="#" class="product-name">Runnen</a>
+                    <div class="product-price">
+                        <div class="offer">
+                            <div class="old-price">Rs. 1852.00</div>
+                            <div class="off-percentage">20% Off</div>
+                        </div>
+                        <div class="price">Rs. 1,450/9 pack</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card product-card">
+                <div class="product-image">
+                    <img src="assets/images/product.png" alt="">
+                    <!-- Wishlist icon -->
+                    <a href="#">
+                        <svg class="active" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34.253 30.185">
+                            <g transform="translate(0.875 0.875)">
+                                <path class="a"
+                                    d="M18.645,967.382a8.543,8.543,0,0,0-6.109,2.578,8.866,8.866,0,0,0,0,12.384L25.39,995.452a1.22,1.22,0,0,0,1.74,0Q33.564,988.9,40,982.357a8.862,8.862,0,0,0,0-12.384,8.566,8.566,0,0,0-12.231,0l-1.5,1.524-1.511-1.537A8.543,8.543,0,0,0,18.645,967.382Z"
+                                    transform="translate(-10.015 -967.382)" />
+                            </g>
+                        </svg>
+                    </a>
+                    <!---->
+                    <div class="product-colors">
+                        <div class="color" style="background-color:#585800"></div>
+                        <div class="color" style="background-color:#9C9990"></div>
+                        <div class="color" style="background-color:#004855"></div>
+                    </div>
+                </div>
+                <div class="product-details">
+                    <a href="#" class="product-name">Runnen</a>
+                    <div class="product-price">
+                        <div class="offer">
+                            <div class="old-price">Rs. 1852.00</div>
+                            <div class="off-percentage">20% Off</div>
+                        </div>
+                        <div class="price">Rs. 1,450/9 pack</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card product-card">
+                <div class="product-image">
+                    <img src="assets/images/product.png" alt="">
+                    <!-- Wishlist icon -->
+                    <a href="#">
+                        <svg class="active" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34.253 30.185">
+                            <g transform="translate(0.875 0.875)">
+                                <path class="a"
+                                    d="M18.645,967.382a8.543,8.543,0,0,0-6.109,2.578,8.866,8.866,0,0,0,0,12.384L25.39,995.452a1.22,1.22,0,0,0,1.74,0Q33.564,988.9,40,982.357a8.862,8.862,0,0,0,0-12.384,8.566,8.566,0,0,0-12.231,0l-1.5,1.524-1.511-1.537A8.543,8.543,0,0,0,18.645,967.382Z"
+                                    transform="translate(-10.015 -967.382)" />
+                            </g>
+                        </svg>
+                    </a>
+                    <!---->
+                    <div class="product-colors">
+                        <div class="color" style="background-color:#585800"></div>
+                        <div class="color" style="background-color:#9C9990"></div>
+                        <div class="color" style="background-color:#004855"></div>
+                    </div>
+                </div>
+                <div class="product-details">
+                    <a href="#" class="product-name">Runnen</a>
+                    <div class="product-price">
+                        <div class="offer">
+                            <div class="old-price">Rs. 1852.00</div>
+                            <div class="off-percentage">20% Off</div>
+                        </div>
+                        <div class="price">Rs. 1,450/9 pack</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card product-card">
+                <div class="product-image">
+                    <img src="assets/images/product.png" alt="">
+                    <!-- Wishlist icon -->
+                    <a href="#">
+                        <svg class="active" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34.253 30.185">
+                            <g transform="translate(0.875 0.875)">
+                                <path class="a"
+                                    d="M18.645,967.382a8.543,8.543,0,0,0-6.109,2.578,8.866,8.866,0,0,0,0,12.384L25.39,995.452a1.22,1.22,0,0,0,1.74,0Q33.564,988.9,40,982.357a8.862,8.862,0,0,0,0-12.384,8.566,8.566,0,0,0-12.231,0l-1.5,1.524-1.511-1.537A8.543,8.543,0,0,0,18.645,967.382Z"
+                                    transform="translate(-10.015 -967.382)" />
+                            </g>
+                        </svg>
+                    </a>
+                    <!---->
+                    <div class="product-colors">
+                        <div class="color" style="background-color:#585800"></div>
+                        <div class="color" style="background-color:#9C9990"></div>
+                        <div class="color" style="background-color:#004855"></div>
+                    </div>
+                </div>
+                <div class="product-details">
+                    <a href="#" class="product-name">Runnen</a>
+                    <div class="product-price">
+                        <div class="offer">
+                            <div class="old-price">Rs. 1852.00</div>
+                            <div class="off-percentage">20% Off</div>
+                        </div>
+                        <div class="price">Rs. 1,450/9 pack</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card product-card stock-out">
+                <div class="product-image">
+                    <img src="assets/images/product.png" alt="">
+                    <!-- Wishlist icon -->
+                    <a href="#">
+                        <svg class="active" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34.253 30.185">
+                            <g transform="translate(0.875 0.875)">
+                                <path class="a"
+                                    d="M18.645,967.382a8.543,8.543,0,0,0-6.109,2.578,8.866,8.866,0,0,0,0,12.384L25.39,995.452a1.22,1.22,0,0,0,1.74,0Q33.564,988.9,40,982.357a8.862,8.862,0,0,0,0-12.384,8.566,8.566,0,0,0-12.231,0l-1.5,1.524-1.511-1.537A8.543,8.543,0,0,0,18.645,967.382Z"
+                                    transform="translate(-10.015 -967.382)" />
+                            </g>
+                        </svg>
+                    </a>
+                    <!---->
+                    <div class="product-colors">
+                        <div class="color" style="background-color:#585800"></div>
+                        <div class="color" style="background-color:#9C9990"></div>
+                        <div class="color" style="background-color:#004855"></div>
+                    </div>
+                </div>
+                <div class="product-details">
+                    <a href="#" class="product-name">Runnen</a>
+                    <div class="product-price">
+                        <div class="offer">
+                            <div class="old-price">Rs. 1852.00</div>
+                            <div class="off-percentage">20% Off</div>
+                        </div>
+                        <div class="price">Rs. 1,450/9 pack</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card product-card">
+                <div class="product-image">
+                    <img src="assets/images/product.png" alt="">
+                    <!-- Wishlist icon -->
+                    <a href="#">
+                        <svg class="active" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34.253 30.185">
+                            <g transform="translate(0.875 0.875)">
+                                <path class="a"
+                                    d="M18.645,967.382a8.543,8.543,0,0,0-6.109,2.578,8.866,8.866,0,0,0,0,12.384L25.39,995.452a1.22,1.22,0,0,0,1.74,0Q33.564,988.9,40,982.357a8.862,8.862,0,0,0,0-12.384,8.566,8.566,0,0,0-12.231,0l-1.5,1.524-1.511-1.537A8.543,8.543,0,0,0,18.645,967.382Z"
+                                    transform="translate(-10.015 -967.382)" />
+                            </g>
+                        </svg>
+                    </a>
+                    <!---->
+                    <div class="product-colors">
+                        <div class="color" style="background-color:#585800"></div>
+                        <div class="color" style="background-color:#9C9990"></div>
+                        <div class="color" style="background-color:#004855"></div>
+                    </div>
+                </div>
+                <div class="product-details">
+                    <a href="#" class="product-name">Runnen</a>
+                    <div class="product-price">
+                        <div class="offer">
+                            <div class="old-price">Rs. 1852.00</div>
+                            <div class="off-percentage">20% Off</div>
+                        </div>
+                        <div class="price">Rs. 1,450/9 pack</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card product-card">
+                <div class="product-image">
+                    <img src="assets/images/product.png" alt="">
+                    <!-- Wishlist icon -->
+                    <a href="#">
+                        <svg class="active" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34.253 30.185">
+                            <g transform="translate(0.875 0.875)">
+                                <path class="a"
+                                    d="M18.645,967.382a8.543,8.543,0,0,0-6.109,2.578,8.866,8.866,0,0,0,0,12.384L25.39,995.452a1.22,1.22,0,0,0,1.74,0Q33.564,988.9,40,982.357a8.862,8.862,0,0,0,0-12.384,8.566,8.566,0,0,0-12.231,0l-1.5,1.524-1.511-1.537A8.543,8.543,0,0,0,18.645,967.382Z"
+                                    transform="translate(-10.015 -967.382)" />
+                            </g>
+                        </svg>
+                    </a>
+                    <!---->
+                    <div class="product-colors">
+                        <div class="color" style="background-color:#585800"></div>
+                        <div class="color" style="background-color:#9C9990"></div>
+                        <div class="color" style="background-color:#004855"></div>
+                    </div>
+                </div>
+                <div class="product-details">
+                    <a href="#" class="product-name">Runnen</a>
+                    <div class="product-price">
+                        <div class="offer">
+                            <div class="old-price">Rs. 1852.00</div>
+                            <div class="off-percentage">20% Off</div>
+                        </div>
+                        <div class="price">Rs. 1,450/9 pack</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
