@@ -141,8 +141,8 @@ header .profile-wrap #profile-icon {
 
 .add-address-wrap .address-search-wrap {
     display: flex;
-    column-gap: 20px;
-    margin: 25px;
+    gap: 10px;
+    margin: 20px;
     flex-wrap: wrap;
 }
 
@@ -156,21 +156,24 @@ header .profile-wrap #profile-icon {
     font-family: 'Quicksand', sans-serif;
     font-size: 16px;
     background: white url('assets/icons/search-icon.svg') 1vw 50% no-repeat padding-box;
-    background-size: 25px 25px;
+    background-size: 20px 20px;
 }
 
 .add-address-wrap .address-search-wrap .btn-search {
+    margin: 0 10px;
     background-color: #BD3761;
     border-radius: 8px;
     color: #fff;
     padding-left: 32px;
     padding-right: 32px;
+    font-weight: 500;
 }
 
 .add-address-wrap .address-search-wrap .btn-save {
-    margin-left: 30px;
+    margin: 0 20px;
     background: transparent linear-gradient(142deg, #0A73B0 0%, #74469C 49%, #BD3761 100%);
     border-radius: 8px;
+    font-weight: 500;
     color: #fff;
     padding-left: 52px;
     padding-right: 52px;
@@ -180,8 +183,9 @@ header .profile-wrap #profile-icon {
     margin: 10px -1vw 0 -1vw;
     overflow: hidden;
 }
-.add-address-wrap .map-wrap img{
-    width:100vw;
+
+.add-address-wrap .map-wrap img {
+    width: 100vw;
 }
 
 @media screen and (max-width:480px) {
@@ -205,5 +209,11 @@ header .profile-wrap #profile-icon {
     }
     .add-address-wrap {
         margin: 120px 5px 5px 5px;
+    }
+    .add-address-wrap .address-search-wrap {
+        justify-content: center;
+    }
+    .add-address-wrap .address-search-wrap .btn{
+        margin:0;
     }
 }
