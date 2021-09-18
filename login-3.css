@@ -135,7 +135,7 @@ header .profile-wrap #profile-icon {
     left: 50%;
     transform: translate(-50%, -50%);
     width: min(95%, 725px);
-    height: clamp(360px, 60vw, 445px);
+    height: 445px;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -166,11 +166,11 @@ header .profile-wrap #profile-icon {
 }
 
 .login-modal .body .social-buttons-wrap {
-    margin:15px 0;
+    margin: 15px 0;
 }
 
 .login-modal .body .social-buttons-wrap .btn-social {
-    margin:10px 0;
+    margin: 10px 0;
     padding: 12px;
     background-color: #fff;
     border-radius: 12px;
