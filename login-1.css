@@ -155,19 +155,22 @@ header .profile-wrap #profile-icon {
 
 .login-modal .body {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.login-modal .body .input-text {
+.login-modal .body .phone-text {
     opacity: 0.8;
 }
 
-.login-modal .body .input-wrap {
+.login-modal .body .phone-wrap {
     display: flex;
     gap: 10px;
     margin: 25px 0;
 }
 
-.login-modal .body .input-wrap #phone {
+.login-modal .body .phone-wrap #phone {
     border-radius: 10px;
     border: 2px solid #fff;
     background-color: #FFFFFF33;
@@ -178,12 +181,12 @@ header .profile-wrap #profile-icon {
     padding: 15px;
 }
 
-.login-modal .body .input-wrap #phone::placeholder {
+.login-modal .body .phone-wrap #phone::placeholder {
     color: #fff;
     opacity: 0.5;
 }
 
-.login-modal .body .input-wrap .btn {
+.login-modal .body .phone-wrap .btn {
     background-color: #fff;
     border-radius: 8px;
     border: 2px solid #fff;
@@ -193,7 +196,7 @@ header .profile-wrap #profile-icon {
     padding: 5px 15px;
 }
 
-.login-modal .body .input-wrap .btn img {
+.login-modal .body .phone-wrap .btn img {
     height: 15px;
 }
 
@@ -211,6 +214,7 @@ header .profile-wrap #profile-icon {
     align-items: center;
     column-gap: 15px;
     font-size: 10px;
+    font-weight: 600;
 }
 
 .login-modal .footer .social img {
