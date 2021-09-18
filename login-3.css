@@ -1,0 +1,277 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Quicksand', sans-serif;
+}
+
+/*------------------------------- Header -------------------------------*/
+
+header.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 5em;
+    background: transparent linear-gradient(93deg, #1673B0 0%, #74469C 53%, #BD3761 100%) 0% 0% no-repeat padding-box;
+    border-radius: 0 0 2.5em 0;
+    padding: 0;
+    padding-left: min(1.5em, 2vw);
+    padding-right: min(1.5em, 2vw);
+    overflow: hidden;
+    z-index: 2;
+}
+
+header .menu-wrap {
+    cursor: pointer;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+
+header .menu-wrap img {
+    height: 1.25em;
+}
+
+header .logo-wrap {
+    display: flex;
+    align-items: center;
+    flex: 5;
+    cursor: pointer;
+}
+
+header .logo-wrap img {
+    height: 2em;
+}
+
+header .search-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 18;
+}
+
+header .search-wrap #searchbar {
+    width: 95%;
+    height: 45px;
+    border: 1px solid #0000000D;
+    border-radius: 8px;
+    box-shadow: 0px 5px 30px #00000066, inset 0 0 2px #000000aa;
+    padding-left: min(3.5em, 8vw);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    background: white url('assets/icons/search-icon.svg') 1vw 50% no-repeat padding-box;
+    background-size: 25px 25px;
+    transition: 0.3s ease-in-out;
+}
+
+header .search-wrap #searchbar::placeholder {
+    color: #707070;
+    opacity: 0.5;
+}
+
+header .search-wrap #searchbar:focus {
+    outline: none;
+    box-shadow: 0px 0px 10px 0px #888;
+}
+
+header .profile-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 5;
+}
+
+header .profile-wrap img:first-child {
+    height: 44px;
+}
+
+header .profile-wrap :not(img:first-child) {
+    height: 24px;
+    margin: 12px 12px;
+}
+
+header .profile-wrap img:last-child {
+    margin: 4px 12px;
+}
+
+header .profile-wrap #profile-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+/*---------------------------- Background -----------------------------*/
+
+.background {
+    background: url(assets/images/home-ss.png) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+/*------------------------------- Login -------------------------------*/
+
+.login-wrap {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #ffffffdd;
+}
+
+.login-modal {
+    position: absolute;
+    background: #fff linear-gradient(122deg, #0B74B0 0%, #75479C 51%, #BD3861 100%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: min(95%, 725px);
+    height: clamp(360px, 60vw, 445px);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+    color: #fff;
+    text-align: center;
+}
+
+.login-modal .logo {
+    margin: 33px;
+}
+
+.login-modal .logo img {
+    height: 80px;
+}
+
+.login-modal .body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-modal .body .social-text {
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+.login-modal .body .social-buttons-wrap {
+    margin:15px 0;
+}
+
+.login-modal .body .social-buttons-wrap .btn-social {
+    margin:10px 0;
+    padding: 12px;
+    background-color: #fff;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 235px;
+}
+
+.login-modal .body .social-buttons-wrap .btn-social img {
+    height: 15px;
+}
+
+.login-modal .body .social-buttons-wrap .btn-social .btn-text {
+    font-size: 11px;
+    flex: 1;
+    text-align: start;
+    line-height: 1;
+    color: #BD3761;
+    font-weight: 600;
+    margin-left: 8px;
+}
+
+.login-modal .body .social-buttons-wrap .btn-social .arrow {
+    height: 10px;
+}
+
+.login-modal .body .phone-wrap #phone {
+    border-radius: 10px;
+    border: 2px solid #fff;
+    background-color: #FFFFFF33;
+    width: 240px;
+    height: 40px;
+    color: #fff;
+    font-size: 12px;
+    padding: 15px;
+}
+
+.login-modal .body .phone-wrap #phone::placeholder {
+    color: #fff;
+    opacity: 0.5;
+}
+
+.login-modal .body .phone-wrap .btn {
+    background-color: #fff;
+    border-radius: 8px;
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 15px;
+}
+
+.login-modal .body .phone-wrap .btn img {
+    height: 15px;
+}
+
+.login-modal .footer {
+    position: fixed;
+    bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.login-modal .footer .social {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.login-modal .footer .social img {
+    height: 15px;
+}
+
+.login-modal .footer .info {
+    font-size: 9px;
+    font-weight: 300;
+    opacity: 0.5;
+}
+
+@media screen and (max-width:480px) {
+    header.navbar {
+        padding-top: 10px;
+        height: fit-content;
+        width: 100vw;
+    }
+    header .search-wrap {
+        justify-content: flex-end;
+        margin-right: 12px;
+    }
+    header .search-wrap #searchbar:not(#searchbar:focus) {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background-position-x: 50%;
+    }
+    header .search-wrap #searchbar::placeholder {
+        opacity: 0;
+    }
+}
