@@ -88,16 +88,16 @@ header .profile-wrap {
     flex: 5;
 }
 
-header .profile-wrap img:first-child {
+header .profile-wrap a:first-child img{
     height: 44px;
 }
 
-header .profile-wrap :not(img:first-child) {
+header .profile-wrap :not(a:first-child) img {
     height: 24px;
     margin: 12px 12px;
 }
 
-header .profile-wrap img:last-child {
+header .profile-wrap a:last-child img{
     margin: 4px 12px;
 }
 
