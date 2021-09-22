@@ -221,6 +221,8 @@ header .profile-wrap #profile-icon {
     column-gap: 15px;
     font-size: 10px;
     font-weight: 600;
+    text-decoration: none;
+    color: #fff;
 }
 
 .login-modal .footer .social img {
