@@ -47,7 +47,7 @@ header .logo-wrap {
 }
 
 header .logo-wrap img {
-    height: 2em;
+    height: 3em;
 }
 
 header .search-wrap {
@@ -179,7 +179,7 @@ header .profile-wrap #profile-icon {
     border-radius: 10px;
     border: 2px solid #fff;
     background-color: #FFFFFF33;
-    width: 55px;
+    width: 42px;
     height: 42px;
     color: #fff;
     font-size: 12px;

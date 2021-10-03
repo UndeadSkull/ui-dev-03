@@ -47,7 +47,7 @@ header .logo-wrap {
 }
 
 header .logo-wrap img {
-    height: 2em;
+    height: 3em;
 }
 
 header .search-wrap {
@@ -116,19 +116,52 @@ header .profile-wrap #profile-icon {
 }
 
 .categories-top {
+    flex: 12;
     display: flex;
     position: relative;
+    /* column-gap: 15px; */
+    /* overflow-x: auto; */
+    /* overflow-y: hidden; */
+    /* padding: 10px 2.5vw 20px; */
+}
+.categories-top .viewport{
+    display: flex;
+    /* position: relative; */
     column-gap: 15px;
     overflow-x: auto;
     overflow-y: hidden;
     padding: 10px 2.5vw 20px;
 }
-
-.categories-top::-webkit-scrollbar {
+.categories-top .viewport::-webkit-scrollbar {
     width: 0;
     height: 0;
 }
+.categories-top button {
+    opacity: 0;
+    transition: opacity 200ms linear;
+    position: absolute;
+    width: 50px;
+    height: 75px;
+    border: none;
+    border-radius: 20%;
+    box-shadow: 0 0 20px 20px #ffffff99;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.categories-top:hover button {
+    opacity: 1;
+}
+.categories-top .slideRight {
+    right: 0;
+    background: #ffffff99 url(assets/icons/chevron-right-icon.svg) 50% 50% no-repeat border-box;
+    background-size: 20px;
+}
 
+.categories-top .slideLeft {
+    background: #ffffff99 url(assets/icons/chevron-left-icon.svg) 50% 50% no-repeat border-box;
+    background-size: 20px;
+    /* left:0; */
+}
 .categories-wrap .card {
     border: none;
     border-radius: 8px;
@@ -148,8 +181,8 @@ header .profile-wrap #profile-icon {
 
 .categories-wrap .cat-card>* {
     border-radius: 8px;
-    height: 182px;
-    width: 132px;
+    height: 255px;
+    width: 185px;
     object-fit: cover;
 }
 
@@ -174,12 +207,12 @@ header .profile-wrap #profile-icon {
     left: 50%;
     transform: translateX(-50%) rotate(45deg);
     border-radius: 4px 0 0 0;
-    background-color: #0000001d;
+    background-color: #00000030;
 }
 
 .category-body {
     position: relative;
-    background-color: #eee;
+    background-color: #ddd;
     box-shadow: inset 0px 3px 6px #00000010;
 }
 

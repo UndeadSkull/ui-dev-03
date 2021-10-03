@@ -43,7 +43,7 @@ header .logo-wrap {
 }
 
 header .logo-wrap img {
-    height: 2em;
+    height: 3em;
 }
 
 header .search-wrap {
@@ -499,14 +499,15 @@ header .profile-wrap #profile-icon {
     font-family: 'Quicksand', sans-serif;
 }
 
-.content section .section-body .card-5 .card-content .price-wrap .price-off {
+.content section .section-body .card-5 .card-content .price-wrap .price-old {
     text-decoration: line-through;
-    color: #ccc;
+    color: #ddd;
 }
 
 .content section .section-body .card-5 .card-content .price-wrap .price {
     font-size: 22px;
     font-weight: 600;
+    display: block;
 }
 
 .content section .section-body .card-5 .card-content .buy-now {
@@ -562,8 +563,20 @@ header .profile-wrap #profile-icon {
     font-weight: 700;
 }
 
+.content section .section-body .tiny-card .card-content .price-wrap .price-old {
+    font-size: 19px;
+    font-weight: 400;
+    color: #aaa;
+}
+
+.content section .section-body .tiny-card .card-content .price-wrap .percentage-off {
+    font-size: 19px;
+    color: #bd3761;
+    font-weight: 500;
+}
+
 .content section .section-body .tiny-card .card-content .price-wrap .price {
-    font-size: 20px;
+    font-size: 21px;
     font-weight: 700;
     margin: 0;
 }

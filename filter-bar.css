@@ -48,7 +48,7 @@ header .logo-wrap {
 }
 
 header .logo-wrap img {
-    height: 2em;
+    height: 3em;
 }
 
 header .search-wrap {
@@ -237,16 +237,17 @@ header .profile-wrap #profile-icon {
     transform: rotate(45deg);
 }
 
-.filter-bar .filter-wrap .filter .filter-body .checkbox-wrap label {
+.filter-bar .filter-wrap .filter .filter-body label.checkbox-wrap {
     font-size: 18px;
     font-weight: 600;
 }
 
-.filter-bar .filter-wrap .filter .filter-body .checkbox-wrap input:disabled~label {
+.filter-bar .filter-wrap .filter .filter-body .checkbox-wrap input:disabled~span {
     color: #ccc;
 }
 
 .filter-bar .bottom-bar {
+    z-index: 3;
     position: sticky;
     bottom: 0;
     right: 0;

@@ -23,8 +23,8 @@
             <img src="assets/icons/header-menu.svg" alt="Menu icon">
         </a>
         <div class="logo-wrap">
-            <a href="./">
-                <img src="assets/logo/logo-2x.png" alt="Logo icon">
+            <a href="./index.html">
+                <img src="assets/logo/logo-full-2x.png" alt="Logo icon">
             </a>
         </div>
         <form class="search-wrap" action="product-listing.html">
@@ -47,44 +47,44 @@
                         Sort
                     </button>
                 </h2>
-                <div id="flush-collapse1" class="accordion-collapse collapse" aria-divledby="flush-heading1" >
+                <div id="flush-collapse1" class="accordion-collapse collapse" aria-divledby="flush-heading1">
                     <div class="accordion-body filter-body">Sort Options</div>
                 </div>
             </div>
             <div class="accordion-item filter">
                 <h2 class="accordion-header filter-title" id="flush-heading2">
-                    <button class="accordion-button collapsed active" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">
+                    <button class="accordion-button active" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapse2" aria-expanded="true" aria-controls="flush-collapse2">
                         Price
                     </button>
                 </h2>
-                <div id="flush-collapse2" class="accordion-collapse collapse" aria-divledby="flush-heading2" >
+                <div id="flush-collapse2" class="accordion-collapse collapse show" aria-divledby="flush-heading2">
                     <div class="accordion-body filter-body">
-                        <div class="checkbox-wrap">
+                        <label class="checkbox-wrap">
                             <input type="checkbox" id="price1" checked="checked">
                             <span class="checkmark"></span>
-                            <label for="price1">Rs. 100 to Rs. 1000</label>
-                        </div>
-                        <div class="checkbox-wrap">
+                            <span>Rs. 100 to Rs. 1000</span>
+                        </label>
+                        <label class="checkbox-wrap">
                             <input type="checkbox" id="price2" checked="checked">
                             <span class="checkmark"></span>
-                            <label for="price2">Rs. 1000 to Rs. 5000</label>
-                        </div>
-                        <div class="checkbox-wrap">
-                            <input type="checkbox" id="price3" checked="checked">
+                            <span>Rs. 1000 to Rs. 5000</span>
+                        </label>
+                        <label class="checkbox-wrap">
+                            <input type="checkbox" id="price3">
                             <span class="checkmark"></span>
-                            <label for="price3">Rs. 5000 to Rs. 10000</label>
-                        </div>
-                        <div class="checkbox-wrap">
+                            <span>Rs. 5000 to Rs. 10000</span>
+                        </label>
+                        <label class="checkbox-wrap">
                             <input type="checkbox" id="price4" disabled>
                             <span class="checkmark"></span>
-                            <label for="price4">Rs. 10000 to Rs. 50000</label>
-                        </div>
-                        <div class="checkbox-wrap">
+                            <span>Rs. 10000 to Rs. 50000</span>
+                        </label>
+                        <label class="checkbox-wrap">
                             <input type="checkbox" id="price5" disabled>
                             <span class="checkmark"></span>
-                            <label for="price5">Rs. 50000 to Rs. 100000</label>
-                        </div>
+                            <span>Rs. 50000 to Rs. 100000</span>
+                        </label>
                     </div>
                 </div>
             </div>
@@ -95,7 +95,7 @@
                         Brand
                     </button>
                 </h2>
-                <div id="flush-collapse3" class="accordion-collapse collapse" aria-divledby="flush-heading3" >
+                <div id="flush-collapse3" class="accordion-collapse collapse" aria-divledby="flush-heading3">
                     <div class="accordion-body filter-body">
                         Brand Options
                     </div>
@@ -108,7 +108,7 @@
                         Review
                     </button>
                 </h2>
-                <div id="flush-collapse4" class="accordion-collapse collapse" aria-divledby="flush-heading4" >
+                <div id="flush-collapse4" class="accordion-collapse collapse" aria-divledby="flush-heading4">
                     <div class="accordion-body filter-body">
                         Review Options
                     </div>
@@ -121,7 +121,7 @@
                         Discount
                     </button>
                 </h2>
-                <div id="flush-collapse5" class="accordion-collapse collapse" aria-divledby="flush-heading5" >
+                <div id="flush-collapse5" class="accordion-collapse collapse" aria-divledby="flush-heading5">
                     <div class="accordion-body filter-body">
                         Discount Options
                     </div>
@@ -134,7 +134,7 @@
                         Offers
                     </button>
                 </h2>
-                <div id="flush-collapse6" class="accordion-collapse collapse" aria-divledby="flush-heading6" >
+                <div id="flush-collapse6" class="accordion-collapse collapse" aria-divledby="flush-heading6">
                     <div class="accordion-body filter-body">
                         Offers Options
                     </div>
@@ -147,17 +147,20 @@
                         Material
                     </button>
                 </h2>
-                <div id="flush-collapse7" class="accordion-collapse collapse" aria-divledby="flush-heading7" >
+                <div id="flush-collapse7" class="accordion-collapse collapse" aria-divledby="flush-heading7">
                     <div class="accordion-body filter-body">
                         Material Options
                     </div>
                 </div>
             </div>
         </div>
-        
+
         <div class="bottom-bar">
-            <div class="product-count"><div>298</div><div>Products Found</div></div>
-            <div class="btn">APPLY <img src="assets/icons/arrow-right.svg" alt=""></div>
+            <div class="product-count">
+                <div>298</div>
+                <div>Products Found</div>
+            </div>
+            <a href="product-listing.html" class="btn">APPLY <img src="assets/icons/arrow-right.svg" alt=""></a>
         </div>
     </div>
 
