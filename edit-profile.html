@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/css/bootstrap.min.css"
+        integrity="sha512-F7WyTLiiiPqvu2pGumDR15med0MDkUIo5VTVyyfECR5DZmCnDhti9q5VID02ItWjq6fvDfMaBaDl2J3WdL1uxA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="edit-profile.css">
+    <title>Edit Profile</title>
+</head>
+
+<body>
+    <header class="navbar">
+        <a href="menu.html" class="menu-wrap">
+            <img src="assets/icons/header-menu.svg" alt="Menu icon">
+        </a>
+        <div class="logo-wrap">
+            <a href="index.html">
+                <img src="assets/logo/logo-full-2x.png" alt="Logo icon">
+            </a>
+        </div>
+        <form class="search-wrap" action="product-listing.html">
+            <input type="text" name="searchbar" placeholder="Search for the materials" id="searchbar">
+        </form>
+        <div class="profile-wrap">
+            <a href="#"><img src="assets/icons/notification-icon.svg" alt="Notification icon"></a>
+            <a href="wishlist.html"><img src="assets/icons/wishlist-icon.svg" alt="Wishlist icon"></a>
+            <a href="my-basket.html"><img src="assets/icons/cart-icon.svg" alt="Cart icon"></a>
+            <a href="sidebar.html"><img src="assets/images/profile-image.jpg" alt="Profile icon" id="profile-icon"></a>
+        </div>
+    </header>
+
+    <div class="edit-profile-wrap">
+        <div class="edit-profile-header">
+            <a href='sidebar.html'>
+                <img src="assets/icons/left-arrow.svg" alt="">
+            </a>
+            <a href='sidebar.html'>Save</a>
+        </div>
+        <div class="edit-profile-body">
+            <div class="user-image">
+                <img class="image" src="assets/images/profile-image.jpg" alt="">
+                <a href="#">
+                    <img class="icon" src="assets/icons/camera-icon.png" alt="">
+                </a>
+            </div>
+            <div class="user-inputs">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input class="form-control" type="text" name="name" id="name" placeholder="John Doe" value="John Doe">
+                </div>
+                <div class="form-group">
+                    <label for="mobile">Mobile Number</label>
+                    <div class="input-group">
+                        <input class="form-control" type="text" name="code" id="code" placeholder="+91" value="+91">
+                        <input class="form-control" type="text" name="mobile" id="mobile" value="98477 07655" >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="d-flex justify-content-between">
+                        <label for="email">Email</label>
+                        <label class="form-text text-muted">Optional</label>
+                    </div>
+                    <input class="form-control" type="email" name="email" id="email" placeholder="john.doe@gmail.com">
+                </div>
+                <div class="form-group">
+                    <label for="dob">Birthday</label>
+                    <input class="form-control" type="date" name="dob" id="dob" value="1990-12-01">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
