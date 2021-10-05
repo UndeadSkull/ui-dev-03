@@ -40,41 +40,41 @@
 
     <div class="noti">
         <div class="noti-header">
-            <a href='index.html'>
-                <img src="assets/icons/left-arrow.svg" alt="">
-            </a>
-            <a href='index.html'>Save</a>
+            <div class="noti-title">Notifications</div>
         </div>
         <div class="noti-body">
-            <div class="user-image">
-                <img class="image" src="assets/images/profile-image.jpg" alt="">
-                <a href="#">
-                    <img class="icon" src="assets/icons/camera-icon.png" alt="">
-                </a>
+            <div class="noti-date">Today</div>
+            <div class="card noti-card order-card">
+                <div>
+                    <div class="card-row">
+                        <div class="name">Jason Jacob</div>
+                        <div class="amount">₹ 45,87,654.56</div>
+                    </div>
+                    <div class="card-row">
+                        <div class="invoice">INVOICE 0005687</div>
+                        <div class="date">16.12.2020</div>
+                    </div>
+                </div>
+                <div class="categories">Furniture | Flooring | Kitchen | Wall Tiles</div>
+                <div class="card-row">
+                    <div class="btn-status draft">DRAFT</div>
+                </div>
+                <div class="card-row btn-wrap">
+                    <a class="btn btn-secondary view-btn" href="">
+                        <img src="assets/icons/eye-icon.svg" alt="">
+                    </a>
+                    <a class="btn reject-btn">
+                        <span>REJECT</span>
+                    </a>
+                    <a class="btn accept-btn">
+                        <span>ACCEPT</span>
+                        <img src="assets/icons/arrow-right.svg" alt="">
+                    </a>
+                </div>
             </div>
-            <div class="user-inputs">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input class="form-control" type="text" name="name" id="name" placeholder="John Doe" value="John Doe">
-                </div>
-                <div class="form-group">
-                    <label for="mobile">Mobile Number</label>
-                    <div class="input-group">
-                        <input class="form-control" type="text" name="code" id="code" placeholder="+91" value="+91">
-                        <input class="form-control" type="text" name="mobile" id="mobile" value="98477 07655" >
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="d-flex justify-content-between">
-                        <label for="email">Email</label>
-                        <label class="form-text text-muted">Optional</label>
-                    </div>
-                    <input class="form-control" type="email" name="email" id="email" placeholder="john.doe@gmail.com">
-                </div>
-                <div class="form-group">
-                    <label for="dob">Birthday</label>
-                    <input class="form-control" type="date" name="dob" id="dob" value="1990-12-01">
-                </div>
+            <div class="noti-date">Yesterday</div>
+            <div class="card noti-card status-card">
+                Your Shipment in Progress
             </div>
         </div>
     </div>
