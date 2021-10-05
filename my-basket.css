@@ -214,13 +214,16 @@ header .profile-wrap #profile-icon {
     justify-self: flex-end;
 }
 
-.my-basket .category .cart-items-wrap .cart-item .remove-btn {
+.my-basket .category .cart-items-wrap .cart-item .item-btns {
     margin-left: auto;
     justify-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.my-basket .category .cart-items-wrap .cart-item .remove-btn img {
-    height: 21px;
+.my-basket .category .cart-items-wrap .cart-item .item-btns img {
+    width: 19px;
 }
 
 .order-page .share-wrap {
@@ -310,14 +313,14 @@ header .profile-wrap #profile-icon {
 .order-page .order-details .detail .col:last-child {
     text-align: right;
 }
-
+/* 
 .order-page .order-details .detail .info::after {
     content: '(Inclusive of all Taxes)';
     opacity: 0.7;
     display: flex;
     font-size: 9px;
     justify-content: flex-end;
-}
+} */
 
 .order-page .order-details .grand-total {
     justify-content: center;
