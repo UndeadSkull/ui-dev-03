@@ -116,7 +116,7 @@ header .profile-wrap #profile-icon {
     position: relative;
     background-color: #fff;
     height: 100vh;
-    width: min(400px, 100%);
+    width: min(400px, 90%);
     position: absolute;
     right: 0;
     z-index: 4;
@@ -125,11 +125,21 @@ header .profile-wrap #profile-icon {
 .sidebar::before {
     content: "";
     position: fixed;
-    width: calc(100% - 400px);
+    width: calc(100% - min(400px, 90%));
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
     left: 0;
     top: 0;
+}
+
+.sidebar .sidebar-close {
+    position: absolute;
+    left: -30px;
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .sidebar .sidebar-header {
